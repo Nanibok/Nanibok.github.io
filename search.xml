@@ -209,7 +209,7 @@
       </tags>
   </entry>
   <entry>
-    <title>spit</title>
+    <title>jQuery笔记</title>
     <url>/%E7%AC%94%E8%AE%B0/jQuery%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="jQuery笔记"><a href="#jQuery笔记" class="headerlink" title="jQuery笔记"></a>jQuery笔记</h1><h1 id="一、初识jQuery"><a href="#一、初识jQuery" class="headerlink" title="一、初识jQuery"></a>一、初识jQuery</h1><p><strong>简介：</strong>jQuery是一个JS库，封装多种预定义的对象和函数，目的在于简化JS开发人员遍历HTML文档，操作DOM，执行动画和开发Ajax的操作,可兼容不同平台。</p>
 <p><strong>本质：</strong>jQuery库就是一个叫jQuery的函数，该函数及其原型中定义了大量的方法，我们使用的就是该函数的方法。</p>
