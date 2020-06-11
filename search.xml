@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test</title>
-    <url>/uncategorized/test/</url>
-    <content><![CDATA[<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>11饿伟大的</p>
-<h2 id="问"><a href="#问" class="headerlink" title="问"></a>问</h2><p>的基督教教会很久很久很久鬼画符鬼画符回复花椒粉胡椒粉和肌肤恢复肌肤防腐剂分发给方法</p>
-<h2 id="都"><a href="#都" class="headerlink" title="都"></a>都</h2><p>大啊大大</p>
-<a id="more"></a>
-
-<h2 id="22"><a href="#22" class="headerlink" title="22"></a>22</h2><p>2嗯嗯</p>
-<p>的时候，就会出现文件冲突，手动合并冲突真的是一件让人头疼且很累的事情。</p>
-<p>当然，我们也可以选择不更新，就这么使用下去，但是很明显，这有悖于我的初心，作为一个开发者，我们应该让自己的代码是易于维护，另一方面在 Next 主题发布新版本时，必然会带来一些新的特性，而我更喜欢尝试新的东西。</p>
-<p>所以这次，我对博客进行了一次重新配置，通过数据文件的方式，将配置和主题分离开来，同时也把自定义布局，样式等都放到数据文件中，避免对主题源码的修改，以便于后续的更新。</p>
-<p>当然，大部分的配置你仍然可以参考我之前的文章，只不过稍微改动一下即可。这里只记录部分我新添加的改动。</p>
-<p>V8.0 版本后模板文件格式变更为了 <code>njk</code>。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;p&gt;hjhjhi&lt;&#x2F;p&gt;</span><br><span class="line">&lt;html&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="数据文件"><a href="#数据文件" class="headerlink" title="数据文件"></a>数据文件</h2><p>自从 NexT-7.3.0 开始，官方推荐采用数据文件将配置与主题分离，这样我们可以在不修改主题源码的同时完成选项配置、自定义布局、自定义样式，便于后续 NexT 版本更新。</p>
-<p>你可以点击 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2Jsb2IvbWFzdGVyL2RvY3MvemgtQ04vREFUQS1GSUxFUy5tZA==" title="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/DATA-FILES.md">这里<i class="fa fa-external-link"></i></span> 来查看数据文件的详细介绍。</p>
-<h3 id="next-yml"><a href="#next-yml" class="headerlink" title="next.yml"></a>next.yml</h3><p>我们可以将所有主题配置放在一个位置 <code>hexo/source/_data/next.yml</code>。这样就无需编辑主题配置文件 <code>next/_config.yml</code>。</p>
-<p>具体步骤：</p>
-<ol>
-<li>在 <code>hexo/source/_data</code> 目录中创建 <code>next.yml</code>（如果<code>_data</code> 不存在，则创建目录）。</li>
-<li>在 <code>next.yml</code> 设置 <code>override</code> 选项为 false。</li>
-<li>将<strong>我们需要的配置项</strong>从主题配置文件复制到 <code>hexo/source/_data/next.yml</code> 中。</li>
-</ol>
-<p>然后我们只需要根据自己的需求配置 <code>next.yml</code> 即可。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>个人博客（一）：HEXO+Github搭建个人博客</title>
     <url>/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9AHEXO-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>该系列博客主要记录使用HEXO + Github Pages搭建个人博客的过程，以及与主题设计、使用技巧、插件推荐等方面相关的内容。</p>
@@ -71,5 +41,594 @@
         <tag>github</tag>
         <tag>HEXO</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>个人博客（二）：HEXO框架基本配置和使用</title>
+    <url>/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9AHEXO%E6%A1%86%E6%9E%B6%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="个人博客（二）：HEXO框架基本配置和使用"><a href="#个人博客（二）：HEXO框架基本配置和使用" class="headerlink" title="个人博客（二）：HEXO框架基本配置和使用"></a>个人博客（二）：HEXO框架基本配置和使用</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文仅记录一些初次使用HEXO框架时的基本配置和常用命令。</p>
+<p>HEXO框架的详细配置和命令可参考官方文档：</p>
+<p>配置：<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==" title="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration<i class="fa fa-external-link"></i></span></p>
+<p>命令：<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29tbWFuZHM=" title="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands<i class="fa fa-external-link"></i></span></p>
+<a id="more"></a>
+
+<h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><p>配置文件即站点根目录下的 <code>_config.yml</code> 文件允许我们对站点进行详细的设置。</p>
+<h3 id="配置说明"><a href="#配置说明" class="headerlink" title="配置说明"></a>配置说明</h3><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Site</td>
+<td>网站的个性化描述</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>博客文章 URL 的设置</td>
+</tr>
+<tr>
+<td>Directory</td>
+<td>目录设置</td>
+</tr>
+<tr>
+<td>Writing</td>
+<td>写作设置</td>
+</tr>
+<tr>
+<td>Home page setting</td>
+<td>首页设置</td>
+</tr>
+<tr>
+<td>Category &amp; Tag</td>
+<td>时间和日期的显示格式</td>
+</tr>
+<tr>
+<td>Pagination</td>
+<td>分页设置</td>
+</tr>
+<tr>
+<td>Extensions</td>
+<td>主题和插件设置</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>网站部署的配</td>
+</tr>
+</tbody></table>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="hexo-init"><a href="#hexo-init" class="headerlink" title="hexo init"></a>hexo init</h3><p><strong>初始化</strong>本地文件夹为博客的根目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure>
+
+<h3 id="hexo-n"><a href="#hexo-n" class="headerlink" title="hexo n"></a>hexo n</h3><p> <strong>新建文章</strong> ，全名为 <code>hexo new</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>layout 指定文章类型，若无指定则默认由配置文件中的 default_layout 选项决定</p>
+</blockquote>
+<blockquote>
+<p>title 指定文章标题，如果参数值中含有空格，则需要使用双引号包围</p>
+</blockquote>
+<h3 id="hexo-g"><a href="#hexo-g" class="headerlink" title="hexo g"></a>hexo g</h3><p> *<em>生成静态文件 *</em>，全名为 <code>hexo generate</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g [-d]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>结合-d 表示生成后立即部署，与 <code>hexo d -g</code> 等价</p>
+</blockquote>
+<h3 id="hexo-s"><a href="#hexo-s" class="headerlink" title="hexo s"></a>hexo s</h3><p><strong>启动本地服务器</strong>，全名为 <code>hexo server</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s [-p&#x2F;-i&#x2F;-s]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>-p    指定服务器端口，默认为 4000</p>
+<p>-i     指定服务器 IP 地址，默认为 0.0.0.0 </p>
+<p>-s    静态模式 ，提供 public 文件夹中的文件并禁用文件监视</p>
+</blockquote>
+<p><strong>注：</strong>运行本地服务器需要安装 hexo-server 插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-server --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="hexo-d"><a href="#hexo-d" class="headerlink" title="hexo d"></a>hexo d</h3><p><strong>部署网站</strong>，全名为<code>hexo deploy</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d [-g]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>-g</code> 选项，指定生成后部署，与 <code>hexo g -d</code> 等价</li>
+</ul>
+<p><strong>说明</strong> ：部署前需要修改 _config.yml 配置文件，下面以 部署到 GitHub 为例进行说明</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;YourgithubName&#x2F;YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: 自定义提交消息，默认为Site updated: &#123;&#123; now(&#39;YYYY-MM-DD HH:mm:ss&#39;) &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="hexo clean"></a>hexo clean</h3><p><code>hexo clean</code> 命令用于 清理缓存文件和已生成的静态文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>github</tag>
+        <tag>HEXO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人博客（三）：HEXO博客个性化设置</title>
+    <url>/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9AHEXO%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="个人博客（三）：HEXO博客个性化设置"><a href="#个人博客（三）：HEXO博客个性化设置" class="headerlink" title="个人博客（三）：HEXO博客个性化设置"></a>个人博客（三）：HEXO博客个性化设置</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>该系列博客主要记录使用HEXO + Github Pages搭建个人博客的过程，以及与主题设计、使用技巧、插件推荐等方面相关的内容。</p>
+<p>本篇是在使用博客过程中个性化的自定义设置，会持续更新并进行改动。</p>
+<a id="more"></a>
+
+<h2 id="一-更改主题"><a href="#一-更改主题" class="headerlink" title="一 更改主题"></a>一 更改主题</h2><p>自定义主题只需将主题文件拷贝到站点目录的 <code>themes</code> 文件夹下并修改配置文件，下面以安装设置Next 主题 为例。</p>
+<h3 id="1-1-下载Next"><a href="#1-1-下载Next" class="headerlink" title="1.1 下载Next"></a>1.1 下载Next</h3><p>在站点根目录下用Git克隆</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-启用Next"><a href="#1-2-启用Next" class="headerlink" title="1.2 启用Next"></a>1.2 启用Next</h3><p>修改站点配置文件<code>_config.yml</code>， 将<code>theme</code> 字段的值更改为 <code>next</code></p>
+<h3 id="1-3-验证"><a href="#1-3-验证" class="headerlink" title="1.3 验证"></a>1.3 验证</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo clean 	<span class="comment">//清除缓存</span></span><br><span class="line">hexo g		<span class="comment">//生成文件</span></span><br><span class="line">hexo s		<span class="comment">//运行本地服务</span></span><br></pre></td></tr></table></figure>
+
+<p>访问 <code>http://localhost:4000</code>，检查站点是否正确运行</p>
+<h3 id="1-4-更新主题"><a href="#1-4-更新主题" class="headerlink" title="1.4 更新主题"></a>1.4 更新主题</h3><p>在主题目录下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<h2 id="二博客站点配置"><a href="#二博客站点配置" class="headerlink" title="二博客站点配置"></a>二博客站点配置</h2><p>修改站点配置文件<code>_config.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="comment">#网站的标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">''</span> <span class="comment">#网站副标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">''</span> <span class="comment">#网站描述</span></span><br><span class="line"><span class="attr">keywords:</span>  <span class="comment">#网站关键字</span></span><br><span class="line"><span class="attr">author:</span> <span class="comment">#网站作者</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span> <span class="comment">#语言 zh-CN简体中文</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">''</span> <span class="comment">#时区，默认就好</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span>  <span class="comment">#网站地址 比如：https://yourname.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span> <span class="comment">#网站根目录</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">:category/:title/</span>	<span class="comment">#网站的url格式</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#自动提交到仓库，可以设置多个仓库</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">    <span class="attr">GitHub:</span> <span class="string">https://github.com/yourname/yourname.github.io.git</span></span><br><span class="line">    <span class="attr">Gitee:</span> <span class="string">https://gitee.com/yourname/blog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="三-Next主题配置"><a href="#三-Next主题配置" class="headerlink" title="三 Next主题配置"></a>三 Next主题配置</h2><p>详细设置请参考Next主题的官方说明</p>
+<p>Next：<span class="exturl" data-url="aHR0cDovL3RoZW1lLW5leHQuaWlzc25hbi5jb20vZ2V0dGluZy1zdGFydGVkLmh0bWw=" title="http://theme-next.iissnan.com/getting-started.html">http://theme-next.iissnan.com/getting-started.html<i class="fa fa-external-link"></i></span></p>
+<p>以下为Next主题常用的自定义设置，只需修改主题目录下的配置文件<code>_config.yml</code></p>
+<h3 id="3-1-选择外观风格"><a href="#3-1-选择外观风格" class="headerlink" title="3.1 选择外观风格"></a>3.1 选择外观风格</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-语言设置"><a href="#3-2-语言设置" class="headerlink" title="3.2 语言设置"></a>3.2 语言设置</h3><p>支持的语言可通过 languages 文件夹查看</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">language: zh-CN	&#x2F;&#x2F;简体中文</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3-菜单设置"><a href="#3-3-菜单设置" class="headerlink" title="3.3 菜单设置"></a>3.3 菜单设置</h3><p>（1）菜单项的文本显示</p>
+<p>修改 themes/next/languages/zh-Hans.yml 文件的 menu 字段对应的中文或者新增。</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">首页</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">归档</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">分类</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">标签</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">关于</span></span><br><span class="line">  <span class="attr">search:</span> <span class="string">搜索</span></span><br><span class="line">  <span class="attr">schedule:</span> <span class="string">日程表</span></span><br><span class="line">  <span class="attr">sitemap:</span> <span class="string">站点地图</span></span><br><span class="line">  <span class="attr">commonweal:</span> <span class="string">公益</span> <span class="number">404</span></span><br><span class="line">  <span class="comment"># 新增menu</span></span><br><span class="line">  <span class="attr">catalogue:</span> <span class="string">目录</span></span><br></pre></td></tr></table></figure>
+
+<p>（2）菜单项的图标设置</p>
+<p>主题配置文件<code>_config.yml</code>的<code>menu</code>字段</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F; || home</span><br><span class="line">  about: &#x2F;about&#x2F; || user</span><br><span class="line">  tags: &#x2F;tags&#x2F; || tags</span><br><span class="line">  categories: &#x2F;categories&#x2F; || th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || heartbeat</span><br><span class="line"></span><br><span class="line"># Enable &#x2F; Disable menu icons &#x2F; item badges.</span><br><span class="line">menu_settings:</span><br><span class="line">  icons: true</span><br><span class="line">  badges: false</span><br><span class="line"> &#x2F;&#x2F;这个名称并不直接显示在页面上，而是用于匹配图标以及翻译</span><br></pre></td></tr></table></figure>
+
+<p>（3）创建菜单项对应的页面</p>
+<p>除了 <code>home</code>， <code>archives</code> ,其他页面都要手动创建</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#分类</span><br><span class="line">hexo new page &quot;categories&quot;</span><br><span class="line">#标签</span><br><span class="line">hexo new page &quot;tags&quot;</span><br><span class="line">#关于</span><br><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure>
+
+<p>对应的文件夹会被创建于<code>source</code> 目录下，在里面的 <code>index.md</code> 文件添加描述，如categories</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories </span><br><span class="line">date: 2020-03-20 10:32:05</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-4-头像设置"><a href="#3-4-头像设置" class="headerlink" title="3.4 头像设置"></a>3.4 头像设置</h3><p>将 <code>avatar</code> 的值设置成头像图片的链接地址</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: #&#x2F;images&#x2F;avatar.gif</span><br><span class="line">  # 修改头像边框为圆形</span><br><span class="line">  rounded: true</span><br><span class="line">  # 鼠标放置头像时，头像旋转特效</span><br><span class="line">  rotated: true</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>HEXO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>spit</title>
+    <url>/%E7%AC%94%E8%AE%B0/jQuery%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="jQuery笔记"><a href="#jQuery笔记" class="headerlink" title="jQuery笔记"></a>jQuery笔记</h1><h1 id="一、初识jQuery"><a href="#一、初识jQuery" class="headerlink" title="一、初识jQuery"></a>一、初识jQuery</h1><p><strong>简介：</strong>jQuery是一个JS库，封装多种预定义的对象和函数，目的在于简化JS开发人员遍历HTML文档，操作DOM，执行动画和开发Ajax的操作,可兼容不同平台。</p>
+<p><strong>本质：</strong>jQuery库就是一个叫jQuery的函数，该函数及其原型中定义了大量的方法，我们使用的就是该函数的方法。</p>
+<p><strong>理念：</strong>write less,do more.</p>
+<a id="more"></a>
+
+<p><strong>其它js库：</strong>Prototype、Do jo、YUI、Ext JS、 Moo Tools</p>
+<p><strong>使用：</strong>下载后在HTML内引入</p>
+<script src="jquery-1.12.4/jquery-1.12.4.min.js"></script>
+<p><strong>例子 Hello World:</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> &lt;html&gt;</span><br><span class="line">       &lt;head&gt;</span><br><span class="line">       &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">       &lt;title&gt;dom操作&lt;&#x2F;title&gt;</span><br><span class="line">       &lt;script src&#x3D;&quot;jquery-3.3.1&#x2F;jquery-3.3.1.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">       &lt;script&gt;</span><br><span class="line">          $(function()&#123;</span><br><span class="line">             alert(&#39;Hello World&#39;);</span><br><span class="line">          &#125;);</span><br><span class="line">       &lt;&#x2F;script&gt;</span><br><span class="line">       &lt;&#x2F;head&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="jQuery的基本概念和操作"><a href="#jQuery的基本概念和操作" class="headerlink" title="jQuery的基本概念和操作"></a>jQuery的基本概念和操作</h1><h2 id="1-jQuery的加载模式"><a href="#1-jQuery的加载模式" class="headerlink" title="1.jQuery的加载模式"></a>1.jQuery的加载模式</h2><p>js中的代码要等所有DOM元素和图片加载完成后才执行，而jQuery在所有DOM元素加载完就执行不用等待其它资源加载完成。</p>
+<p>原生JS如果编写了多个入口函数,后面编写的会覆盖前面的<br>jQuery中编写多个入口函数,后面的不会覆盖前面的</p>
+<h3 id="2-jQuey的入口函数及其不同写法"><a href="#2-jQuey的入口函数及其不同写法" class="headerlink" title="2.jQuey的入口函数及其不同写法"></a>2.jQuey的入口函数及其不同写法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 第1种写法：</span><br><span class="line">   $(document).ready(function () &#123;</span><br><span class="line">       alert(&quot;hello jquery1&quot;)</span><br><span class="line">   &#125;)</span><br><span class="line">   &#x2F;&#x2F; 第2种写法：</span><br><span class="line">   jQuery(document).ready(function () &#123;</span><br><span class="line">       alert(&quot;hello jquery2&quot;)</span><br><span class="line">   &#125;)</span><br><span class="line">   &#x2F;&#x2F; 第3种写法：（推荐）</span><br><span class="line">   $(function () &#123;</span><br><span class="line">       alert(&quot;hello jquery3&quot;)</span><br><span class="line">   &#125;)</span><br><span class="line">   &#x2F;&#x2F; 第4种写法：</span><br><span class="line">   jQuery(function () &#123;</span><br><span class="line">       alert(&quot;hello jquery4&quot;)</span><br><span class="line">   &#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-访问标识符-的冲突问题"><a href="#3-访问标识符-的冲突问题" class="headerlink" title="3.访问标识符$的冲突问题"></a>3.访问标识符$的冲突问题</h3><p>jQuery使用$符号来作为选择器，如果其他的框架也通用使用$符号来作为选择器，两者产生冲突，后面引入的框架会覆盖掉前面的</p>
+<p>解决方案：</p>
+<p>释放$的使用权，释放之后就不能再使用$,改为使用jQuey　　　　</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jQuery.noConflict();</span><br></pre></td></tr></table></figure>
+
+<p>可自定义一个访问符号</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var jn &#x3D; jQuery.noConflict();</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-核心函数及其可接受的参数"><a href="#4-核心函数及其可接受的参数" class="headerlink" title="4.核心函数及其可接受的参数"></a>4.核心函数及其可接受的参数</h3><p><strong>核心函数：</strong>$();</p>
+<p><strong>四种参数：</strong></p>
+<p><strong>1）字符串选择器</strong><br>jQuery函数通过该选择器获取对应的DOM，然后将这些DOM封装成一个jQuery对象中并返回。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var $box &#x3D; $(&quot;.box&quot;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>2）DOM元素</strong><br>jQuery函数将该DOM元素封装成jQuery对象并返回</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var span &#x3D; document.genElementsByTagName(&quot;span&quot;)[0];</span><br><span class="line"></span><br><span class="line">var $span &#x3D; $(span);</span><br></pre></td></tr></table></figure>
+
+<p><strong>3）HTML文本字符串</strong><br>jQuery函数根据传入的文本创建好HTML元素并封装成jQuery对象返回</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var $one &#x3D; $(&quot;&lt;div class&#x3D;&quot;one&quot;&gt;one&lt;&#x2F;div&gt;&quot;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>4）匿名函数</strong></p>
+<p>当文档加载完毕之后jQuery函数调用匿名函数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$(function()&#123;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-jQuery对象"><a href="#5-jQuery对象" class="headerlink" title="5.    jQuery对象"></a>5.    jQuery对象</h3><p>jQuery对象是jQuery函数的一个实例，是一个类数组对象(伪数组，具有索引-值形式和length属性），数组中存放的是DOM对象，而DOM对象是Node的实例。</p>
+<p>对jQuery对象的操作实际上是对jQuery数组中的DOM对象的批量操作。jQuery对象和DOM对象可以相互转化。</p>
+<p> jQuery对象的获取通常是使用选择器来获取的。比如，获取所有clss为one元素:$(“.one”);</p>
+<h3 id="6-jQuery选择器"><a href="#6-jQuery选择器" class="headerlink" title="6.    jQuery选择器"></a>6.    jQuery选择器</h3><p><strong>基本选择器：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">所有选择器  *</span><br><span class="line">标签选择器  标签名</span><br><span class="line">ID选择器    #id</span><br><span class="line">类选择器    .className</span><br><span class="line">群组选择器  .one,.two   多个选择器使用**,**分隔，取并集</span><br><span class="line">复合选择器  .one.two   多个选择器组合使用，取交集</span><br></pre></td></tr></table></figure>
+
+<p><strong>层次选择器：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">后代选择器   .one .two   </span><br><span class="line">  两个选择器使用空格隔开，表示可以获取当前元素的子代以及孙子代等等后代元素。</span><br><span class="line">子代选择器   .one&gt;.two</span><br><span class="line">  两个选择器使用&gt;隔开，表示只能获取当前选中元素的子代元素。</span><br></pre></td></tr></table></figure>
+
+<p><strong>兄弟选择器：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">下一个兄弟选择器   .one+.two</span><br><span class="line">   两个选择器使用+隔开，表示可以获取当前元素的下一个兄弟元素，下一个兄弟元素要能符合.two</span><br><span class="line">之后所有子代选择器  .one~.two</span><br><span class="line">   两个选择器使用~隔开，表示可以获取当前元素之后的所有兄弟元素，只有所有兄弟元素要能符合.two</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-jQuery过滤器"><a href="#7-jQuery过滤器" class="headerlink" title="7.jQuery过滤器"></a>7.jQuery过滤器</h3><p>jQuery的过滤器必须用在jQuery选择器后，表示对通过前面的jQuery选择器选择到的内容的过滤，建立在前面选择器已经选择到的元素的基础之上。 </p>
+<p>语法：selector:过滤器</p>
+<p><strong>基本过滤器：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">selector:first  获取所有已选择到的元素中的第一个元素</span><br><span class="line">selector:last   获取所有已选择到的元素中的最后一个元素</span><br><span class="line">selector:even    获取所有已选择到的元素中的索引为偶数的元素</span><br><span class="line">selector:odd     获取所有已选择到的元素中的索引为奇数的元素</span><br><span class="line">selector:eq(index) 获取所有已选择到的元素中的索引为index的元素</span><br><span class="line">selector:lt(num)   获取所有已选择到的元素中的索引值小于num的元素</span><br><span class="line">selector:gt(num)   获取所有已选择到的元素中的索引值大于num的元素</span><br><span class="line">selector1:not(selector2)  获取所有已选择到的元素中的除了selector2的元素</span><br><span class="line">selector:header   获取所有已选择到的元素中的标题元素(h1~h6)</span><br></pre></td></tr></table></figure>
+
+<p><strong>内容过滤器：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">selector:contains(text) </span><br><span class="line">          获取所有已选择到的元素中包含指定文本text的元素</span><br><span class="line">selector:empty   </span><br><span class="line">          获取所有已选择到的元素中的空元素(没有子节点和文本)</span><br><span class="line">selector:parent  </span><br><span class="line">          获取所有已选择到的元素中的非空元素(有子节点或文本)，如$(&quot;div:parent&quot;);</span><br><span class="line">selector1:has(selector2)  </span><br><span class="line">          获取所有已选择到的元素中包含selector2的元素，如$(&quot;div:has(&#39;span&#39;)&quot;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>可见性过滤器：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">隐藏类型分两种：</span><br><span class="line"></span><br><span class="line">  1）不占据屏幕空间</span><br><span class="line">        display:none;</span><br><span class="line">        &lt;input type&#x3D;&quot;hidden&quot;&gt;	</span><br><span class="line">  2）占据屏幕空间</span><br><span class="line">        visibility:hidden;</span><br><span class="line">        opacity:0;&#x2F;&#x2F;透明度为0</span><br><span class="line">   使用：</span><br><span class="line">      :visible   选择所有占据屏幕空间的元素</span><br><span class="line">      :hidden    选择所有不占据屏幕空间的元素</span><br></pre></td></tr></table></figure>
+
+<p><strong>属性过滤器：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">selector[attrKey]  </span><br><span class="line">         获取所有已选择到的元素中具有属性attrKey的元素</span><br><span class="line"> selector[attrKey&#x3D;attrVal]    </span><br><span class="line">         获取所有已选择到的元素中具有属性attrKey，并且属性值为attrVal的元素</span><br><span class="line"> selector[attrKey^&#x3D;attrVal]  </span><br><span class="line">         获取所有已选择到的元素中具有属性attrKey，并且属性值为以attrVal开头的元素</span><br><span class="line"> selector[attrKey$&#x3D;attrVal]  </span><br><span class="line">         获取所有已选择到的元素中具有属性attrKey，并且属性值为以attrVal结尾的元素</span><br><span class="line"> selector[attrKey*&#x3D;attrVal]  </span><br><span class="line">         获取所有已选择到的元素中具有属性attrKey，并且属性值为包含attrVal的元素</span><br><span class="line"> selector[attrKey!&#x3D;attrVal]  </span><br><span class="line">         获取所有已选择到的元素中具有属性attrKey，并且属性值不为以attrVal的元素或者没有属性attrVal的元素</span><br></pre></td></tr></table></figure>
+
+<p><strong>后代选择器：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">selector:nth-child(index)</span><br><span class="line">      获取每个selector元素中索引为index的子元素。【注意】index从1开始</span><br><span class="line">  selector:first-child</span><br><span class="line">      获取每一个selector元素中的第一个子元素（每个父元素的第一个子元素）</span><br><span class="line">  selector:last-child</span><br><span class="line">      获取每一个selector元素中的最后一个子元素（每个父元素的最后一个子元素）</span><br><span class="line">  selector:only-child</span><br><span class="line">      获取每一个selector元素中的独生子子元素（每个父元素如果只有一个孩子元素，获取该元素）</span><br><span class="line">  selector:first-of-type</span><br><span class="line">      获取每个selector元素中每种类型子元素中的第一个</span><br><span class="line">  selector:last-of-type</span><br><span class="line">      获取每个selector元素中每种类型子元素中的最后一个</span><br></pre></td></tr></table></figure>
+
+<p><strong>表单过滤器：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:checked    选取所有被选中的元素，用于复选框、单选框、下拉框</span><br><span class="line">  :selected   选取所有被选中的元素，该选择器只适用于&lt;option&gt;</span><br><span class="line">  :focus   选取当前获取焦点的元素</span><br><span class="line">  :text    选取所有的单行文本框(&lt;input type&#x3D;&quot;text&quot;&gt;)</span><br><span class="line">  :password  选取所有的密码框</span><br><span class="line">  :input     选取所有的&lt;input&gt;,&lt;textarea&gt;,&lt;select&gt;,&lt;button&gt;元素。</span><br><span class="line">    *注意，$(&quot;:input&quot;)是选中可以让用户输入的标签元素；而$(&quot;input&quot;)是选择名字为input的标签元素。*</span><br><span class="line">  :enable   选取所有可用元素，该选择器仅可用于支持disable属性的html元素。(&lt;button&gt;,&lt;input&gt;,&lt;optgruop&gt;,&lt;option&gt;,&lt;select&gt;,&lt;textarea&gt;)</span><br><span class="line">  :disable   选取所有不可用元素，该选择器也仅可用于支持disable属性的html元素。</span><br><span class="line">  :radio      选取所有的单选框</span><br><span class="line">  :checkbox   选取所有的多选框</span><br><span class="line">  :submit     选取所有的提交按钮</span><br><span class="line">  :image      选取所有的input类型为image的表单元素</span><br><span class="line">  :reset   选取所有的input类型为reset的表单元素</span><br><span class="line">  :button  选取所有的input类型为button的表单元素</span><br><span class="line">  :file    选取所有的input类型为file的表单元素</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-jQuery中的Dom操作"><a href="#8-jQuery中的Dom操作" class="headerlink" title="8.jQuery中的Dom操作"></a>8.jQuery中的Dom操作</h3><h4 id="8-1-查找节点"><a href="#8-1-查找节点" class="headerlink" title="8.1 查找节点"></a><strong>8.1 查找节点</strong></h4><p>通过jQuery选择器来完成</p>
+<h4 id="8-2-创建节点"><a href="#8-2-创建节点" class="headerlink" title="8.2 创建节点"></a><strong>8.2 创建节点</strong></h4><p>  创建元素节点：var newTd = $(“<td></td>“)<br>  创建文本节点：var newTd = $(“<td>文本内容</td>“)</p>
+<h4 id="8-3-插入节点"><a href="#8-3-插入节点" class="headerlink" title="8.3 插入节点"></a><strong>8.3 插入节点</strong></h4><p> <strong>8.3.1 内部插入</strong></p>
+<p>  1) $A.<strong>append</strong>(B)<br>       将B追加到A的末尾处，作为它的最后一个子元素</p>
+<pre><code>$A.**appendTo**(B)
+ 将A追加到B的末尾，作为它的最后一个子元素</code></pre><p>  2)  $A.<strong>prepend</strong>(B)<br>       将B追加到A的前面，作为它的第一个子元素</p>
+<p>​       $A.<strong>prependTo</strong>(B)<br>​        将A追加到B的前面，作为它的第一个子元素</p>
+<p> <strong>8.3.2 外部插入</strong></p>
+<p>  1) $A.<strong>after</strong>(B)<br>            在A之后追加B，作为它的兄弟元素<br>       $A.<strong>insertAfter</strong>(B)<br>            在B之后追加A，作为它的兄弟元素<br>   2) $A.<strong>before</strong>(B)<br>            在A之前追加B，作为它的兄弟元素<br>       $A.<strong>insertBefore</strong>(B)<br>             在B之前追加A，作为它的兄弟元素</p>
+<h4 id="8-4-删除节点"><a href="#8-4-删除节点" class="headerlink" title="8.4 删除节点"></a><strong>8.4 删除节点</strong></h4><p>   <strong>remove</strong>([selector])<br>       从DOM中删除所有匹配的元素，返回值是一个指向已经被删除的节点的引用，可以在以后再使用这些元素。<br>       该方法会移除元素，同时也会移除元素内部的一切，包括绑定的事件及与该元素相关的jQuery数据。<br>   <strong>detach</strong>([selector])<br>       与remove()类似，但是detach()保存所有jQuery数据和被移走的元素的相关联事件。<br>   <strong>empty</strong>()<br>       无参数。从DOM中清空集合中匹配元素的所有的子节点。</p>
+<h4 id="8-5-复制节点"><a href="#8-5-复制节点" class="headerlink" title="8.5 复制节点"></a><strong>8.5 复制节点</strong></h4><p> $(“#id”).<strong>clone</strong>(false|true);<br>  该方法返回的是一个节点的引用</p>
+<p>  参数默认为false，为浅复制，只复制元素不复制事件；<br>  参数是true时,为深复制，复制元素的同时复制元素中所绑定的事件。</p>
+<h4 id="8-6-替换节点"><a href="#8-6-替换节点" class="headerlink" title="8.6 替换节点"></a><strong>8.6 替换节点</strong></h4><p>   <strong>replaceWith</strong>(newContent);<br>        用新内容替换集合中所有匹配的元素，并且返回被删除的元素的集合。<br>        该方法会删除与节点相关联的所有数据和事件处理程序。<br>   <strong>replaceAll</strong>(target);<br>        用集合的匹配元素替换每个目标元素。</p>
+<h4 id="8-7-包裹节点"><a href="#8-7-包裹节点" class="headerlink" title="8.7 包裹节点"></a><strong>8.7 包裹节点</strong></h4><p>   wrap([wrappingElement])<br>        在每个匹配的元素外层包上一个html元素<br>   warpAll([wrappingElement])<br>        将所有匹配的元素用一个元素来包裹，在所有匹配元素外面包裹一层HTML结构<br>   warpInner([wrappingElement])<br>        每个匹配元素里面内容(子元素)都会被这种结构包裹</p>
+<h4 id="8-8-节点遍历"><a href="#8-8-节点遍历" class="headerlink" title="8.8 节点遍历"></a><strong>8.8 节点遍历</strong></h4><p>   children([selector])<br>        用于取得匹配元素的子元素集合(只考虑子元素而不考虑任何后代元素)<br>      $(‘.content.inner’)=&gt;$(‘.content’).children(‘.inner’);<br>   find(selector)<br>        在当前对象元素中的子元素查找，和参数所匹配的所有的后代元素<br>   next([selector])<br>        取得匹配的元素集合中每一个元素紧邻的后面兄弟元素<br>   nextAll([selector])<br>        查找当前元素之后所有的同辈元素<br>   prev([selector])<br>         取得匹配元素前面紧邻的兄弟元素<br>   prevAll([selector])<br>         取得当前元素之前所有的同辈元素<br>   silibinng([selector])<br>         取得匹配元素的前后所有的兄弟元素<br>   closest(selector)<br>         取得和参数匹配的最近的元素，如果匹配不上继续向上查找父元素<br>   filter(selector)<br>         把当前所选择的所有元素再进行筛选过滤<br>   parent([selector])<br>         取得匹配元素的集合中，每个元素的父元素<br>   parents([selector])<br>         获得集合中每个匹配元素的祖先元素</p>
+<h1 id="二、jQuery的API和事件"><a href="#二、jQuery的API和事件" class="headerlink" title="二、jQuery的API和事件"></a>二、jQuery的API和事件</h1><h2 id="1-静态方法和实例方法"><a href="#1-静态方法和实例方法" class="headerlink" title="1.    静态方法和实例方法"></a>1.    静态方法和实例方法</h2><p>静态方法：在类上添加的方法，通过类名调用</p>
+<p>实例方法：在类的原型上添加的方法，通过类的实例调用</p>
+<h2 id="2-静态方法-通过-调用"><a href="#2-静态方法-通过-调用" class="headerlink" title="2.    静态方法(通过$调用)"></a>2.    静态方法(通过$调用)</h2><h4 id="2-1-each"><a href="#2-1-each" class="headerlink" title="2.1 each()"></a>2.1 each()</h4><p>可遍历数组或伪数组（jQuery对象)，默认返回在遍历的数组，不支持在回调函数中对数组进行处理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$.each(arr,function(index,value)&#123;</span><br><span class="line">&#x2F;&#x2F;第一个参数为遍历元素的索引</span><br><span class="line">&#x2F;&#x2F;第二个参数为遍历的元素</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>原生JS的foreach()，只能遍历数组（伪数组也不行）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">arr.foreach(function(value,index)&#123;</span><br><span class="line">&#x2F;&#x2F;第一个参数为遍历的元素</span><br><span class="line">&#x2F;&#x2F;第二个参数为当前元素的索引</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-map"><a href="#2-2-map" class="headerlink" title="2.2 map()"></a>2.2 map()</h4><p>通过$调用，可遍历数组或伪数组（jQuery对象)，默认返回空数组，可生成新数组</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$.map(arr,function(value,index)&#123;</span><br><span class="line">&#x2F;&#x2F;第一个参数为要遍历的数组</span><br><span class="line">&#x2F;&#x2F;第二个参数为每遍历一个元素执行的回调函数</span><br><span class="line">return value+index；</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>原生JS的map方法，只能遍历数组</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">arr.map(function(value,index，array)&#123;</span><br><span class="line">&#x2F;&#x2F;第一个参数为遍历的元素</span><br><span class="line">&#x2F;&#x2F;第二个参数为当前元素的索引</span><br><span class="line">&#x2F;&#x2F;第三个参数为新数组，与当前数组的值相同</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3-trim-str"><a href="#2-3-trim-str" class="headerlink" title="2.3 trim(str)"></a>2.3 trim(str)</h4><p>除去字符串两端的空格并返回一个新的字符串</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var str &#x3D; &quot;     nabok       &quot;;</span><br><span class="line">var res &#x3D; $.trim(str);</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-4-isArray-obj-是否为（0真数组（伪数组为false）"><a href="#2-4-isArray-obj-是否为（0真数组（伪数组为false）" class="headerlink" title="2.4 isArray(obj) 是否为（0真数组（伪数组为false）"></a>2.4 <strong>isArray(obj)</strong> 是否为（0真数组（伪数组为false）</h4><p>​     <strong>isfunction(obj)</strong> 是否为函数</p>
+<pre><code>**iswindow(obj)** 是否为window对象</code></pre><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var arr &#x3D; [12,2,2];</span><br><span class="line">var res &#x3D; $.isArray(arr);</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-5-holdReady"><a href="#2-5-holdReady" class="headerlink" title="2.5 holdReady()"></a>2.5 holdReady()</h4><p>暂停或恢复ready函数的执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$.holdReady(true);&#x2F;&#x2F;暂停</span><br><span class="line">$.holdReady(false);&#x2F;&#x2F;恢复</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-jQuery中常用的API"><a href="#3-jQuery中常用的API" class="headerlink" title="3.    jQuery中常用的API"></a>3.    jQuery中常用的API</h2><h3 id="1-属性和属性节点"><a href="#1-属性和属性节点" class="headerlink" title="1. 属性和属性节点"></a>1. 属性和属性节点</h3><p>属性：对象中保存的变量，通过    对象.属性名或对象[“属性名”]    设置或获取</p>
+<p>属性节点：HTML标签中（DOM对象）的属性，位于标签下的attributes属性中，setAttributes(“”,””)设置，getAttributes(“”)获取</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;属性节点</span><br><span class="line">  attr(name|properties|key,value|fn)</span><br><span class="line">      一个参数时，返回第一个元素中指定节点的值</span><br><span class="line">      两个参数时，设置所有找到元素中指定节点的值，若不存在该节点则添加</span><br><span class="line">  removeAttr(attributeName)</span><br><span class="line">      删除所有找到元素的指定节点,多个节点以空格分隔 	  </span><br><span class="line">&#x2F;&#x2F;属性 </span><br><span class="line">  prop(name|properties|key,value|fn)</span><br><span class="line">  removeProp(propertyName)</span><br><span class="line">  与上面的方法相似</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-类操作"><a href="#2-类操作" class="headerlink" title="2. 类操作"></a>2. 类操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;添加类   多个类名空格隔开</span><br><span class="line">       addClass(className)</span><br><span class="line">     	  $(&quot;p&quot;).addClass(&quot;selected1 selected2&quot;);</span><br><span class="line">&#x2F;&#x2F;判断有没有指定的类，有，返回true，否则返回false   </span><br><span class="line">       hasClass(className)</span><br><span class="line">&#x2F;&#x2F;删除类   </span><br><span class="line">       removeClass(className)</span><br><span class="line">&#x2F;&#x2F;切换类	有则删除，没有则添加</span><br><span class="line">	  toggleClass(className)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-文本值操作"><a href="#3-文本值操作" class="headerlink" title="3.文本值操作"></a>3.文本值操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">html() 与原生js中的innerHTML一样</span><br><span class="line">   无参：获取html的值</span><br><span class="line">   有参数html：设置html的值</span><br><span class="line">  	 $(&quot;div&quot;).html(&quot;&lt;p&gt;mememe&lt;&#x2F;p&gt;&quot;);</span><br><span class="line">text() 与原生js中的innerText一样</span><br><span class="line">   无参：获取文本值</span><br><span class="line">   有参数text：设置文本值</span><br><span class="line">val()</span><br><span class="line">   无参：获取value的值</span><br><span class="line">   有参数value：设置value的值</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-样式操作"><a href="#4-样式操作" class="headerlink" title="4.样式操作"></a>4.样式操作</h3><p><strong>4.1    设置DOM元素的CSS样式</strong><br>        css(name|pro|[,val|fn]) </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">逐个设置</span><br><span class="line">$(&quot;div&quot;).css(&quot;width&quot;,&quot;100px&quot;);</span><br><span class="line">链式设置(不超过3次)</span><br><span class="line">$(&quot;div&quot;).css(&quot;width&quot;,&quot;100px&quot;).css(&quot;height&quot;,&quot;100px&quot;);</span><br><span class="line">批量设置</span><br><span class="line">$(&quot;div&quot;).css(&#123;</span><br><span class="line">width: &quot;100px&quot;,</span><br><span class="line">height: &quot;100px&quot;</span><br><span class="line">&#125;);</span><br><span class="line">获取样式值</span><br><span class="line">$(&quot;div&quot;).css(&quot;width&quot;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>4.2    位置</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">offset([coordinates]) </span><br><span class="line">position() </span><br><span class="line">scrollTop([val]) </span><br><span class="line">scrollLeft([val])</span><br></pre></td></tr></table></figure>
+
+<p><strong>4.3    尺寸</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">heigh([val|fn]) </span><br><span class="line">width([val|fn]) </span><br><span class="line">innerHeight() </span><br><span class="line">innerWidth() </span><br><span class="line">outerHeight([soptions]) </span><br><span class="line">outerWidth([options])</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-jQuery中的工具方法"><a href="#5-jQuery中的工具方法" class="headerlink" title="5.    jQuery中的工具方法"></a>5.    jQuery中的工具方法</h3><p> <strong>1) get()</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;以数组的形式返回DOM节点，get(index)返回获取到的元素中第index个（从0开始）元素,dom本身</span><br><span class="line">$(&#39;div&#39;).get();</span><br></pre></td></tr></table></figure>
+
+<p> <strong>2) toArray()</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;返回一个包含jQuery对象中的所有DOM元素数组。</span><br><span class="line">$(&#39;div&#39;).toArray();</span><br></pre></td></tr></table></figure>
+
+<p><strong>3) eq(index)</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;eq()，返回获取到的元素中第index个（从0开始）元素的jQuery对象</span><br><span class="line">$(&#39;div&#39;).eq(1);</span><br></pre></td></tr></table></figure>
+
+<p>  <strong>4) filter(function(index,item){})</strong>;   //过滤器函数，返回jQuery对象。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var $result &#x3D; $(&#39;div&#39;).filter(function(index,item)&#123;</span><br><span class="line"> 	return index &#x3D;&#x3D; 2;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p> <strong>5) map(function(index,item){})</strong>    //用于获取或设置元素集合中的值。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var $result &#x3D; $(&#39;div&#39;).map(function(index,item)&#123;</span><br><span class="line">    return $(item).html();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>6) each(function(index,item){})</strong>  //遍历一个jQuery对象。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$(&#39;div&#39;).each(function(index,item)&#123;</span><br><span class="line">   console.log(index,&#39;--&#39;,item);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>7)index()</strong>    //返回当前元素在兄弟节点中的位置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var index &#x3D; $(&quot;this&quot;).index();</span><br></pre></td></tr></table></figure>
+
+<p><strong>8)sibilngs()</strong>    //返回非当前元素的所有兄弟节点</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var others &#x3D; $(this).siblings();</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-jQuery的事件"><a href="#4-jQuery的事件" class="headerlink" title="4.    jQuery的事件"></a>4.    jQuery的事件</h2><h3 id="4-1-事件的绑定和解绑"><a href="#4-1-事件的绑定和解绑" class="headerlink" title="4.1    事件的绑定和解绑"></a>4.1    事件的绑定和解绑</h3><p><strong>事件绑定</strong>（在一个元素上可以添加多个相同或不同的事件，不会覆盖）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.eventName(fn)	事件有智能提示，是jQuery已实现的部分事件</span><br><span class="line">$(&quot;button&quot;).click(function()&#123;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line">2.on(eventName,fn)	字符串形式，可以添加所有js事件</span><br><span class="line">$(&quot;button&quot;).on(&quot;click&quot;,function()&#123;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>事件解绑</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">off()</span><br><span class="line">      移除一个事件处理函数,无参表示移除所有事件，一个参数表示移除所有指定类型的事件，两个参表示移除指定类型的指定事件</span><br><span class="line">      $(&quot;button&quot;).off();</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-事件冒泡和默认行为"><a href="#4-2-事件冒泡和默认行为" class="headerlink" title="4.2    事件冒泡和默认行为"></a>4.2    事件冒泡和默认行为</h3><p>事件冒泡：发生在子元素的事件会传递给其父元素，从而父元素的相同事件也会触发，比如点击子元素则在父元素绑定的点击事件也会触发。</p>
+<p>阻止事件冒泡:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在子元素添加：</span><br><span class="line">1.return false;</span><br><span class="line">2.event.stopPropagation();</span><br></pre></td></tr></table></figure>
+
+<p>默认行为：一些标签的默认事件，比如点击a标签会默认跳转，submit按钮默认提交</p>
+<p>阻止默认行为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在标签的绑定事件中：</span><br><span class="line">1.return false;</span><br><span class="line">2.event.preventDefaut();</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-事件自动触发"><a href="#4-3-事件自动触发" class="headerlink" title="4.3    事件自动触发"></a>4.3    事件自动触发</h3><p><strong>trigger()</strong>或<strong>triggerHandler()</strong><br>      自动触发匹配元素所有指定的事件类型</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$(&quot;.father&quot;).click(function()&#123;</span><br><span class="line">alert(&quot;123&quot;);</span><br><span class="line">&#125;);</span><br><span class="line">$(&quot;.father&quot;).triggle(&quot;click&quot;);</span><br><span class="line">&#x2F;&#x2F;trigger()会触发事件冒泡和默认行为，而triggerHandler()不会触发事件冒泡或默认行为</span><br><span class="line">&#x2F;&#x2F;a标签比较特殊，如果想同时触发a的事件和默认行为，推荐在a中添加span标签并将事件绑定给他</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-4-自定义事件"><a href="#4-4-自定义事件" class="headerlink" title="4.4    自定义事件"></a>4.4    自定义事件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">两个条件：</span><br><span class="line">1.事件通过on形式绑定。</span><br><span class="line">2.通过triggle自动触发</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-5-事件命名空间"><a href="#4-5-事件命名空间" class="headerlink" title="4.5    事件命名空间"></a>4.5    事件命名空间</h3><p>给事件打上标签，可以只触发相同事件的某一个</p>
+<p>注意：triggle调用带命名空间的子元素事件时，会触发父元素带相同命名空间的事件，调用不带命名空间的子元素事件时，会触发父元素所有相同类型的事件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">两个条件：</span><br><span class="line">1.事件通过on形式绑定。</span><br><span class="line">2.通过triggle或triggleHandler自动触发</span><br><span class="line">$(&quot;button&quot;).on(&quot;click.kj&quot;,function()&#123;&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-6-事件委托"><a href="#4-6-事件委托" class="headerlink" title="4.6    事件委托"></a>4.6    事件委托</h3><p>delegate(),将事件绑定到已有元素，由该元素触发事件并将结果反馈给指定元素</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jQuery代码在所有dom元素加载完成就执行，因此动态创建的元素不能响应相应的事件，可采用事件委托解决(事件冒泡原理)</span><br><span class="line">$(&quot;ul&quot;).delegate(&quot;li&quot;,&quot;ckick&quot;,function()&#123;&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-7-事件分类"><a href="#4-7-事件分类" class="headerlink" title="4.7    事件分类"></a>4.7    事件分类</h3><h3 id="4-7-1-鼠标事件"><a href="#4-7-1-鼠标事件" class="headerlink" title="4.7.1    鼠标事件"></a>4.7.1    鼠标事件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">click()  单击</span><br><span class="line">dblclick()  双击</span><br><span class="line">hover()   悬停</span><br><span class="line">mousedown()  按下</span><br><span class="line">mouseup()  抬起</span><br><span class="line">mouseenter()  移入  不支持子元素</span><br><span class="line">mouseleave()  离开  不支持子元素 </span><br><span class="line">mouseout()   离开  支持子元素</span><br><span class="line">mouseover()  进入  支持子元素 （即移入子元素时会依次触发父元素的移出移入事件）</span><br><span class="line">mousemove()  移动</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-7-2-键盘事件"><a href="#4-7-2-键盘事件" class="headerlink" title="4.7.2    键盘事件"></a>4.7.2    键盘事件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">keypress()   按键按下</span><br><span class="line">keyup()   按键抬起</span><br><span class="line">keydown()   按键按下</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-7-3-表单事件"><a href="#4-7-3-表单事件" class="headerlink" title="4.7.3    表单事件"></a>4.7.3    表单事件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">focus()  聚焦事件</span><br><span class="line">blur()    失去焦点事件</span><br><span class="line">change()  当元素的值发生改变时激发的事件</span><br><span class="line">select()  当textarea或文本类型的input元素中的文本被选择时触发的事件</span><br><span class="line">submit()  表单提交事件，绑定在form上</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-jQuery动画"><a href="#5-jQuery动画" class="headerlink" title="5.    jQuery动画"></a>5.    jQuery动画</h2><h3 id="5-1-展开收起动画"><a href="#5-1-展开收起动画" class="headerlink" title="5.1    展开收起动画"></a>5.1    展开收起动画</h3><h3 id="5-2-折叠下拉动画"><a href="#5-2-折叠下拉动画" class="headerlink" title="5.2    折叠下拉动画"></a>5.2    折叠下拉动画</h3><h3 id="5-3-谈入谈出动画"><a href="#5-3-谈入谈出动画" class="headerlink" title="5.3    谈入谈出动画"></a>5.3    谈入谈出动画</h3><h3 id="5-4-自定义动画"><a href="#5-4-自定义动画" class="headerlink" title="5.4    自定义动画"></a>5.4    自定义动画</h3><h1 id="三-jQuery原理（设计模式）"><a href="#三-jQuery原理（设计模式）" class="headerlink" title="三     jQuery原理（设计模式）"></a>三     jQuery原理（设计模式）</h1><p>封装自己的jquery框架</p>
+<h2 id="1-jQery入口函数"><a href="#1-jQery入口函数" class="headerlink" title="1.    jQery入口函数"></a>1.    jQery入口函数</h2><h3 id="1-1-jQuery的基本结构"><a href="#1-1-jQuery的基本结构" class="headerlink" title="1.1     jQuery的基本结构"></a>1.1     jQuery的基本结构</h3><p>本质上是一个立即执行函数（即闭包），闭包可避免多框架变量名污染，通过window.xxx = xxx的形式暴露内部变量给外界，传递window实参的目的是方便后期压缩代码，提升查找效率，形参undefined的作用是方便压缩代码，兼容低版本IE浏览器，保障内部使用undefined不被修改</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(function(window,undefined)&#123;</span><br><span class="line">	var njQuery &#x3D; function()&#123;</span><br><span class="line">		return new njQuery.prototype.init();</span><br><span class="line">	&#125;</span><br><span class="line">	njQuery.prototype &#x3D; &#123;</span><br><span class="line">		constructor: njQuery</span><br><span class="line">	&#125;</span><br><span class="line">	njQuery.prototype.init.prototype &#x3D; njQuery.prototype;</span><br><span class="line">	window.njQuery &#x3D; window.$ &#x3D; njQuery;</span><br><span class="line">&#125;)(window);</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-入口函数的返回值"><a href="#1-2-入口函数的返回值" class="headerlink" title="1.2    入口函数的返回值"></a>1.2    入口函数的返回值</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.传入 &#39;&#39; null undefined NaN  0  false</span><br><span class="line">	返回空jQuery对象</span><br><span class="line">2.字符串:</span><br><span class="line">    html代码片段：会将创建好的DOM元素存储到jQuery对象中返回</span><br><span class="line">    选择器: 将找到的所有元素存储到jQuery对象中返回</span><br><span class="line">3.传入数组(真&#x2F;伪)</span><br><span class="line">	将数组中存储的元素依次存储到jQuery对象中返回</span><br><span class="line">4.除上述类型以外(对象、DOM元素、基本数据类型)</span><br><span class="line">    将传入的数据存储到jQuery对象中返回</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">str.charAt() --字符串的第几位字符</span><br><span class="line">children()	--	所选元素的下一级元素</span><br><span class="line">trim() -- 去除字符串的前后空格</span><br><span class="line">arr.replace(,) -- 替代</span><br><span class="line">push() -- 复制</span><br><span class="line">slice() -- 截取</span><br><span class="line">apply(),call() -- 强制修改方法内部的this</span><br><span class="line">	call(对象，[参数1，参数2……])</span><br><span class="line">	apply(对象，[数组])</span><br><span class="line">真伪数组的转换</span><br><span class="line">对方法分类管理，提高维护性extend()</span><br><span class="line">监听DOM元素是否加载完成</span><br><span class="line">	onload事件--等到DOM元素和资源加载完成才执行</span><br><span class="line">	DOMContentLoaded事件 -- 等到DOM元素加载完毕就执行</span><br><span class="line">	onreadystatechange事件 -- document.readyState变化事件（4次）</span><br><span class="line">	addEventListener(&quot;事件&quot;,fn())</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-原型上的属性"><a href="#1-3-原型上的属性" class="headerlink" title="1.3    原型上的属性"></a>1.3    原型上的属性</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jquery: &quot;1.1.0&quot;,	&#x2F;&#x2F;jQ版本号</span><br><span class="line">selector: &quot;&quot;,	&#x2F;&#x2F;实例默认的选择器取值</span><br><span class="line">length: 0,	&#x2F;&#x2F;实例默认的长度</span><br><span class="line">push: [].push,	&#x2F;&#x2F;给实例添加新元素</span><br><span class="line">sort: [].sort,	&#x2F;&#x2F;对实例中的元素进行排序</span><br><span class="line">splice: [].splice,	&#x2F;&#x2F;按照指定下标指定数量删除元素，也可以替换删除的元素</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-4-原型上的核心方法"><a href="#1-4-原型上的核心方法" class="headerlink" title="1.4    原型上的核心方法"></a>1.4    原型上的核心方法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">toArray 把实例转换为数组返回</span><br><span class="line">get  获取指定下标的元素，获取的是原生DOM</span><br><span class="line"></span><br><span class="line">eq 获取指定下标的元素，获取的是jQuery类型的实例对象</span><br><span class="line">first 获取实例中的第一个元素，是jQuery类型的实例对象</span><br><span class="line">last 获取实例中的最后一个元素，是jQuery类型的实例对象</span><br><span class="line"></span><br><span class="line">each 遍历实例，把遍历到的数据传给回调使用（工具方法与对象方法，返回原数据，this指向value）</span><br><span class="line">map  遍历实例，把遍历到的数据传给回调使用，然后把回调的返回值收集起来组成一个新的数组返回</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>jQuery</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown简单指南</title>
+    <url>/%E7%AC%94%E8%AE%B0/Markdown%E7%AE%80%E5%8D%95%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<h2 id="MarKDown简单指南"><a href="#MarKDown简单指南" class="headerlink" title="MarKDown简单指南"></a>MarKDown简单指南</h2><h4 id="1-Markdown"><a href="#1-Markdown" class="headerlink" title="1.Markdown"></a>1.Markdown</h4><p>Markdown是一种轻量级标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，并能转换成有效的 HTML 文档。<br>创始人是<strong>Aaron Swartz</strong>和<strong>John Gruber</strong>。</p>
+<a id="more"></a>
+
+<p><strong>优点</strong>  </p>
+<ul>
+<li><p>易读（看起来舒服）、易写（语法简单）、易更改纯文本，奉行极简主义。</p>
+</li>
+<li><p>跨平台使用，可以使用任何编辑器打开。</p>
+</li>
+<li><p>越来越多的网站支持Markdown，简书、知乎、CSDN、Github、Gitlab、Gitbook</p>
+</li>
+<li><p>可以导出 PDF、Word、HTML、Epub、LaTeX 等文件格式；</p>
+</li>
+<li><p>摆脱Word</p>
+<h4 id="2-基本语法"><a href="#2-基本语法" class="headerlink" title="2.基本语法"></a>2.基本语法</h4><h6 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h6><p>使用=和-标记一级和二级标</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="  一级标题"></a>  一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="  二级标题"></a>  二级标题</h2><p>使用#，可表示1-6级标题</p>
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h6 id="2-段落"><a href="#2-段落" class="headerlink" title="2.段落"></a>2.段落</h6><p>Markdown 语法中的段落由一行或多行文本组成的，不同的段落之间使用空行来标记。<br>如果想在段内换行，则需要在上一行的结尾插入两个以上的空格然后回车</p>
+<h6 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h6><p>在段落的每行或者只在第一行使用符号&gt;,还可使用多个嵌套引用</p>
+<blockquote>
+<p>引用</p>
+<blockquote>
+<p>嵌套引用</p>
+</blockquote>
+</blockquote>
+<h6 id="4-分割线"><a href="#4-分割线" class="headerlink" title="4.分割线"></a>4.分割线</h6><p>由三个以上的星号*或减号-或下划线_来标记</p>
+<hr>
+<h2 id="或"><a href="#或" class="headerlink" title="  或"></a>  或</h2><p>  或</p>
+<hr>
+<h6 id="5-粗体和斜体"><a href="#5-粗体和斜体" class="headerlink" title="5.粗体和斜体"></a>5.粗体和斜体</h6><p>粗体由两个*<em>或两个__包裹，斜体由一个</em>或_包裹</p>
+<p>  <em>斜体</em>，<em>斜体</em><br>  <strong>粗体</strong>，<strong>粗体</strong></p>
+<h6 id="6-列表"><a href="#6-列表" class="headerlink" title="6.列表"></a>6.列表</h6><p>无序列表由星号*或加号+或减号-标记<br>有序列表由数字和点.标记<br>嵌套列表使用制表符</p>
+<h6 id="7-标记（内嵌代码）"><a href="#7-标记（内嵌代码）" class="headerlink" title="7.标记（内嵌代码）"></a>7.标记（内嵌代码）</h6><p>使用反引号</p>
+<p>  <code>ctrl+a</code></p>
+<h6 id="8-图片"><a href="#8-图片" class="headerlink" title="8.图片"></a>8.图片</h6><p>  <img src="%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80" alt="图片替代文字"></p>
+<h6 id="9-链接"><a href="#9-链接" class="headerlink" title="9.链接"></a>9.链接</h6><p>  行内式链接<br>  <a href="链接地址" title="Title">链接文字</a><br>  参考式链接<br>  [链接文字][链接标记]<br>  [链接标记]: 链接地址  “Title”<br>  自动链接<br>  &lt;URL或邮箱地址&gt;</p>
+<h6 id="10-转义"><a href="#10-转义" class="headerlink" title="10.转义"></a>10.转义</h6><p>使用 \（反斜杠）来插入一些特殊符号</p>
+<h5 id="3-常用编辑器"><a href="#3-常用编辑器" class="headerlink" title="3.常用编辑器"></a>3.常用编辑器</h5></li>
+</ul>
+<ul>
+<li>Linux<ul>
+<li>VSCode</li>
+<li>Ato</li>
+<li>Typora</li>
+<li>ReTex</li>
+<li>UberWrite</li>
+<li>RStudio</li>
+</ul>
+</li>
+<li>Windows<ul>
+<li>VSCod</li>
+<li>Ato</li>
+<li>CuteMarkE</li>
+<li>MarkdownPad</li>
+<li>Mi</li>
+<li>Typor</li>
+<li>RStudio</li>
+</ul>
+</li>
+<li>浏览器插件<ul>
+<li>MaDo (Chrome</li>
+<li>Marxico（Chrome）</li>
+</ul>
+</li>
+</ul>
+<p><strong>推荐：</strong>typora</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>廖雪峰Git教程学习笔记</title>
+    <url>/uncategorized/%E5%BB%96%E9%9B%AA%E5%B3%B0Git%E6%95%99%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="廖雪峰Git教程学习笔记"><a href="#廖雪峰Git教程学习笔记" class="headerlink" title="廖雪峰Git教程学习笔记"></a>廖雪峰Git教程学习笔记</h1><h2 id="一-Git简介"><a href="#一-Git简介" class="headerlink" title="一.Git简介"></a>一.Git简介</h2><p>Git是目前世界上最先进的分布式版本控制系统（没有之一）。<br><strong>版本控制系统</strong>：自动记录跟踪每次文件的改动，作一个文件快照，形成一个版本。<br>分布式版本控制系统：每个人电脑里都有完整的版本库，不必联网，中央服务器主要用于交换团队的修改。</p>
+<a id="more"></a>
+
+<blockquote>
+<p>Mercurial、Bazaar、BitKeeper、Git</p>
+</blockquote>
+<p>集中式的版本控制系统：版本库集中存放在中央服务器，必须联网才能工作。</p>
+<blockquote>
+<p>CVS、SVN</p>
+</blockquote>
+<p>历史：linux之父为了更好的管理他自己的开源项目linux系统而自己用C语言开发的分布式版本控制系统Git</p>
+<h2 id="二-Git安装"><a href="#二-Git安装" class="headerlink" title="二.Git安装"></a>二.Git安装</h2><h3 id="2-1-Linux上安装"><a href="#2-1-Linux上安装" class="headerlink" title="2.1 Linux上安装"></a>2.1 Linux上安装</h3><p>1.判断是否已安装Git</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git</span><br></pre></td></tr></table></figure>
+
+<p>2.否则</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core（旧）</span><br></pre></td></tr></table></figure>
+
+<p>3.其他：<br>从Git官网下载源码，解压，依次执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;config</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-Windows上安装Git"><a href="#2-2-Windows上安装Git" class="headerlink" title="2.2 Windows上安装Git"></a>2.2 Windows上安装Git</h3><p>1.从Git官网下载安装程序,直接安装（或<span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20vZ2l0LWluc3RhbGxlci9naXQtZm9yLXdpbmRvd3PvvIk=" title="https://gitee.com/git-installer/git-for-windows）">https://gitee.com/git-installer/git-for-windows）<i class="fa fa-external-link"></i></span><br>2.配置</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"Your Name"</span><span class="comment">//名字</span></span><br><span class="line">$ git config --global user.email <span class="string">"email@example.com"</span><span class="comment">//邮箱</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="三-创建版本库"><a href="#三-创建版本库" class="headerlink" title="三.创建版本库"></a>三.创建版本库</h2><p>仓库/repository/仓库/目录</p>
+<p>1.选择一个合适的地方，创建一个空目录</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ mkdir learngit	<span class="comment">//创建一个空文件夹</span></span><br><span class="line"></span><br><span class="line">$ cd learngit	<span class="comment">//移动到新文件夹</span></span><br><span class="line"></span><br><span class="line">$ pwd	<span class="comment">//显示当前位置的路径</span></span><br></pre></td></tr></table></figure>
+
+<p>2.初始化目录，将其变成Git可以管理的仓库</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git init	<span class="comment">//初始化</span></span><br><span class="line"></span><br><span class="line">$ git ls -ah 	<span class="comment">//罗列目录下的文件</span></span><br></pre></td></tr></table></figure>
+
+<p>成功会自动创建.git文件夹，Git用来跟踪管理版本库</p>
+<p>所有的版本控制系统只能跟踪文本文件的改动，比如TXT文件，网页，所有的程序代码等等</p>
+<p>无法跟踪图片、视频、Word等二进制文件的变化</p>
+<p>Windows自带记事本的文本文件开头有个0xefbbbf，可能编译错误，不推荐</p>
+<h2 id="四-添加提交修改"><a href="#四-添加提交修改" class="headerlink" title="四.添加提交修改"></a>四.添加提交修改</h2><h3 id="4-1-把文件添加到仓库"><a href="#4-1-把文件添加到仓库" class="headerlink" title="4.1 把文件添加到仓库"></a>4.1 把文件添加到仓库</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git add file	<span class="comment">//反复多次使用，添加多个文件，把文件修改添加到暂存区</span></span><br><span class="line">$ git add *	<span class="comment">//将所有更改一次性添加</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-把文件提交到仓库"><a href="#4-2-把文件提交到仓库" class="headerlink" title="4.2 把文件提交到仓库"></a>4.2 把文件提交到仓库</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">"description"</span>	<span class="comment">//一次提交，把暂存区的所有内容提交到当前分支</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="五-版本控制"><a href="#五-版本控制" class="headerlink" title="五.版本控制"></a>五.版本控制</h2><h3 id="5-1-基本概念"><a href="#5-1-基本概念" class="headerlink" title="5.1 基本概念"></a>5.1 基本概念</h3><p>工作区（Working Directory）：存在文件的目录<br>版本库（Repository）：.git文件夹<br>暂存区（stage或index）：<br>分支（branch）：<br>master分支：Git自动创建的唯一一个主分支<br>commit id：版本号<br>HEAD：表示当前版本 HEAD^：上一个版本 HEAD^^：上上一个版本 ……  HEAD~100：上100个版本<br>$ git status    //查看仓库当前的状态<br>$ git diff file    //查看已修改未提交内容与最新版本的不同</p>
+<h3 id="5-2-版本回退"><a href="#5-2-版本回退" class="headerlink" title="5.2 版本回退"></a>5.2 版本回退</h3><p>$ git log或$ git log –pretty=oneline    //显示从最近到最远的提交日志<br>$ git reset –hard HEAD^    //回退到上一个版本<br>$ git reset –hard 1094a    //回到1094adb…版本<br>$ git reflog    //查看命令日志<br>原理：Git在内部有个指向当前版本的HEAD指针，当你回退版本的时候，Git仅仅是把HEAD从指向该版本号并更新工作区的文件</p>
+<h3 id="5-3-管理修改"><a href="#5-3-管理修改" class="headerlink" title="5.3 管理修改"></a>5.3 管理修改</h3><p>每次修改，如果不用git add到暂存区，那就不会加入到commit中。<br>git diff HEAD – file    //查看工作区和版本库里面最新版本的区别.</p>
+<h3 id="5-4-撤销修改"><a href="#5-4-撤销修改" class="headerlink" title="5.4 撤销修改"></a>5.4 撤销修改</h3><p>人工修改<br>$ git checkout – file    //丢弃工作区的修改<br>$ git reset HEAD <file>    //撤销暂存区的修改<br>场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout – file。</p>
+<p>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。</p>
+<p>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，进行版本回退，不过前提是没有推送到远程库。</p>
+<h3 id="5-5-删除文件"><a href="#5-5-删除文件" class="headerlink" title="5.5 删除文件"></a>5.5 删除文件</h3><p>$ rm file    //删除文件管理器的文件<br>$ git rm file    //从版本库中删除文件<br>$ git checkout – file。//恢复错删文件</p>
+<h2 id="六-远程仓库"><a href="#六-远程仓库" class="headerlink" title="六.远程仓库"></a>六.远程仓库</h2><p>Github–&gt;Git远程仓库</p>
+<h3 id="6-1-配置SSH"><a href="#6-1-配置SSH" class="headerlink" title="6.1 配置SSH"></a>6.1 配置SSH</h3><p>1 检查是否存在SSH Key</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd ~&#x2F;.ssh</span><br><span class="line">$ ls	&#x2F;&#x2F;看是否存在 id_rsa 和 id_rsa.pub文件，如果存在，说明已经有SSH Key</span><br></pre></td></tr></table></figure>
+
+<p>2 创建SSH Key</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"youremail@example.com"</span></span><br></pre></td></tr></table></figure>
+
+<p>3 关联Github</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ cat id_rsa.pub	<span class="comment">//查看密钥并复制</span></span><br></pre></td></tr></table></figure>
+
+<p>登陆GitHub，打开“Account settings”，“SSH Keys”页面，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容。</p>
+<p>4 成功验证</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br><span class="line"><span class="comment">//运行结果出现如下提示</span></span><br><span class="line">Hi xiangshuo1992! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-2-关联远程库"><a href="#6-2-关联远程库" class="headerlink" title="6.2 关联远程库"></a>6.2 关联远程库</h3><p>1.Github上创建repository</p>
+<p>2.本地仓库关联github的远程库</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git remote add origin git@github.com:用户名/远程仓库名.git</span><br></pre></td></tr></table></figure>
+
+<p>3.把本地仓库的内容推送到GitHub仓库</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p>4.推送最新修改</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-3-克隆远程库"><a href="#6-3-克隆远程库" class="headerlink" title="6.3 克隆远程库"></a>6.3 克隆远程库</h3><p>1.确定Github上repository的地址</p>
+<p>2.克隆远程库到本地</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone git@github.com:用户名&#x2F;仓库名.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="七-分支管理"><a href="#七-分支管理" class="headerlink" title="七.分支管理"></a>七.分支管理</h2><p>每次提交，Git都把它们串成一条时间线，这条时间线就是一个分支。</p>
+<p>一开始，只有一条时间线，在Git里，这个分支叫主分支，即master分支。</p>
+<p>HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支</p>
+<p>一开始的时候，master分支是一条线，Git用master指向最新的提交，再用HEAD指向master，就</p>
+<p>能确定当前分支，以及当前分支的提交点：</p>
+<p>每次提交，master分支都会向前移动一步，这样，随着你不断提交，master分支的线也越来越长。</p>
+<p>当我们创建新的分支，例如dev时，Git新建了一个指针叫dev，指向master相同的提交，再把</p>
+<p>HEAD指向dev，就表示当前分支在dev上：</p>
+<p>不过，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变</p>
+<p>假如我们在dev上的工作完成了，就可以把dev合并到master上。Git怎么合并呢？最简单的方法，</p>
+<p>就是直接把master指向dev的当前提交，就完成了合并</p>
+<h3 id="7-1-创建与合并分支"><a href="#7-1-创建与合并分支" class="headerlink" title="7.1 创建与合并分支"></a>7.1 创建与合并分支</h3><p>1.创建分支</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout -b dev</span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch dev	&#x2F;&#x2F;创建分支</span><br><span class="line">$ git checkout dev	&#x2F;&#x2F;切换分支</span><br><span class="line">$ git branch	&#x2F;&#x2F;查看分支</span><br></pre></td></tr></table></figure>
+
+<p>2.修改文件后切换回master分支</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout master</span><br></pre></td></tr></table></figure>
+
+<p>3.把dev分支的工作成果合并到master分支上</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git merge dev</span><br></pre></td></tr></table></figure>
+
+<p>4.删除dev分支</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -d dev</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-2-解决分支冲突"><a href="#7-2-解决分支冲突" class="headerlink" title="7.2 解决分支冲突"></a>7.2 解决分支冲突</h3><p>分支冲突：要合并的分支在同一提交点上有不同的修改<br>解决方法：把Git合并失败的文件手动编辑为我们希望的内容，再提交。<br>$ git status    //可查看冲突文件<br>$ git log –graph –pretty=oneline –abbrev-commit //查看分支合并图</p>
+<p>分支管理策略<br>$ git merge –no-ff -m “merge with no-ff” dev<br>//强制禁用Fast forward模式，，Git就会在merge时生成一个新的commit，从分支历史上就可以看出分支信息</p>
+<h3 id="7-3-分支管理策略"><a href="#7-3-分支管理策略" class="headerlink" title="7.3 分支管理策略"></a>7.3 分支管理策略</h3><p>通常，合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。</p>
+<p>如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。</p>
+<p>下面我们实战一下–no-ff方式的git merge：</p>
+<p>首先，仍然创建并切换dev分支：</p>
+<p>$ git checkout -b dev<br>Switched to a new branch ‘dev’<br>修改readme.txt文件，并提交一个新的commit：</p>
+<p>$ git add readme.txt<br>$ git commit -m “add merge”<br>[dev f52c633] add merge<br> 1 file changed, 1 insertion(+)<br>现在，我们切换回master：</p>
+<p>$ git checkout master<br>Switched to branch ‘master’<br>准备合并dev分支，请注意–no-ff参数，表示禁用Fast forward：</p>
+<p>$ git merge –no-ff -m “merge with no-ff” dev<br>Merge made by the ‘recursive’ strategy.<br> readme.txt | 1 +<br> 1 file changed, 1 insertion(+)<br>因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去。</p>
+<p>合并后，我们用git log看看分支历史：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git log --graph --pretty&#x3D;oneline --abbrev-commit</span><br><span class="line"></span><br><span class="line">e1e9c68 (HEAD -&gt; master) merge with no-ff</span><br><span class="line">|\  </span><br><span class="line">| * f52c633 (dev) add merge</span><br><span class="line">|&#x2F;  </span><br><span class="line"></span><br><span class="line">cf810e4 conflict fixed</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>可以看到，不使用Fast forward模式，merge后就像这样：</p>
+<p>git-no-ff-mode</p>
+<h3 id="7-4-分支策略"><a href="#7-4-分支策略" class="headerlink" title="7.4 分支策略"></a>7.4 分支策略</h3><p>master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；<br>干活都在dev分支上，也就是说，dev分支是不稳定的。<br>到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本<br>团队每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并</p>
+<p>BUG分支<br>每个bug都可以通过一个新的临时分支来修复，修复后，合并分支，然后将临时分支删除<br>$ git stash        //把当前工作现场“储藏”起来，等以后恢复现场后继续工作<br>或<br>$ git stash apply stash@{0}        //恢复指定的stash<br>$ git stash list    //查看已存放的工作现场</p>
+<p>$ git stash apply    //恢复工作现场<br>$ git stash drop    //删除stash内容<br>或<br>$ git stash pop        //恢复并删除stash内容</p>
+<p>Feature分支<br>开发一个新feature，最好新建一个分支；<br>如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除</p>
+<p>多人协作<br>$ git remote    //查看远程库的信息<br>$ git remote -v        //示更远程库详细的信息</p>
+<p>推送分支<br>把某分支上的所有本地提交推送到远程库。<br>推送时，要指定本地分支，这样，Git就会把该分支推送到远程库对应的远程分支上<br>$ git push origin master<br>推送原则：<br>master分支是主分支，因此要时刻与远程同步；</p>
+<p>dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；</p>
+<p>bug分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；</p>
+<p>feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。</p>
+<p>抓取分支<br>$ git clone <span class="exturl" data-url="bWFpbHRvOmdpdEBnaXRodWIuY29t" title="mailto:git@github.com">git@github.com<i class="fa fa-external-link"></i></span>:michaelliao/learngit.git    //克隆，只有master分支<br>$ git checkout -b dev origin/dev    //创建与远程origin的相应的分支<br>当其他人已推送的的最新提交和你试图推送的提交有冲突，往往推送失败<br>解决方法：先用git pull把最新的提交从origin/dev抓下来，然后，在本地合并，解决冲突，再推送<br>$ git branch –set-upstream-to=origin/dev dev    //指定本地dev分支与远程origin/dev分支的链接<br>$ git pull    //抓取分支</p>
+<p>多人协作流程：<br>查看远程库信息，使用git remote -v；</p>
+<p>本地新建的分支如果不推送到远程，对其他人就是不可见的；</p>
+<p>从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；</p>
+<p>在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；</p>
+<p>建立本地分支和远程分支的关联，使用git branch –set-upstream branch-name origin/branch-name；</p>
+<p>从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。</p>
+<p>Rebase<br>把分叉的提交历史“整理”成一条直线，看上去更直观，但本地的分叉提交已经被修改过了<br>$ git rebase    //把本地未push的分叉提交历史整理成直线</p>
+<h2 id="八-标签管理"><a href="#八-标签管理" class="headerlink" title="八.标签管理"></a>八.标签管理</h2><p>发布一个版本时，我们通常先在版本库中打一个标签（tag），<br>这样，就唯一确定了打标签时刻的版本。<br>将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。<br>所以，标签也是版本库的一个快照，实质上也是指向某个commit的指针，但不能移动</p>
+<p>创建标签<br>切换到需要打标签的分支，敲命令git tag <name>就可以打一个新标签<br>$ git tag    //查看所有标签，按字母排序的<br>$ git tag v0.9 f52c633    //给指定commit id打标签<br>$ git tag -a v0.1 -m “version 0.1 released” 1094adb        //创建带有说明的标签<br>$ git show <tagname>    //查看标签信息</p>
+<p>操作标签<br>$ git tag -d v0.1    //删除本地标签<br>git push origin <tagname>    //推送某个标签到远程<br>$ git push origin –tags    //一次性推送全部尚未推送到远程的本地标签</p>
+<p>$ git tag -d v0.9<br>$ git push origin :refs/tags/v0.9    //删除远程标签</p>
+]]></content>
   </entry>
 </search>
