@@ -286,10 +286,8 @@
   </entry>
   <entry>
     <title>廖雪峰Git教程学习笔记</title>
-    <url>/uncategorized/%E5%BB%96%E9%9B%AA%E5%B3%B0Git%E6%95%99%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/%E7%AC%94%E8%AE%B0/%E5%BB%96%E9%9B%AA%E5%B3%B0Git%E6%95%99%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="廖雪峰Git教程学习笔记"><a href="#廖雪峰Git教程学习笔记" class="headerlink" title="廖雪峰Git教程学习笔记"></a>廖雪峰Git教程学习笔记</h1><h2 id="一-Git简介"><a href="#一-Git简介" class="headerlink" title="一.Git简介"></a>一.Git简介</h2><p>Git是目前世界上最先进的分布式版本控制系统（没有之一）。<br><strong>版本控制系统</strong>：自动记录跟踪每次文件的改动，作一个文件快照，形成一个版本。<br>分布式版本控制系统：每个人电脑里都有完整的版本库，不必联网，中央服务器主要用于交换团队的修改。</p>
-<a id="more"></a>
-
 <blockquote>
 <p>Mercurial、Bazaar、BitKeeper、Git</p>
 </blockquote>
@@ -298,6 +296,8 @@
 <p>CVS、SVN</p>
 </blockquote>
 <p>历史：linux之父为了更好的管理他自己的开源项目linux系统而自己用C语言开发的分布式版本控制系统Git</p>
+<a id="more"></a>
+
 <h2 id="二-Git安装"><a href="#二-Git安装" class="headerlink" title="二.Git安装"></a>二.Git安装</h2><h3 id="2-1-Linux上安装"><a href="#2-1-Linux上安装" class="headerlink" title="2.1 Linux上安装"></a>2.1 Linux上安装</h3><p>1.判断是否已安装Git</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git</span><br></pre></td></tr></table></figure>
 
@@ -426,6 +426,13 @@
 <p>操作标签<br>$ git tag -d v0.1    //删除本地标签<br>git push origin <tagname>    //推送某个标签到远程<br>$ git push origin –tags    //一次性推送全部尚未推送到远程的本地标签</p>
 <p>$ git tag -d v0.9<br>$ git push origin :refs/tags/v0.9    //删除远程标签</p>
 ]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>版本管理系统</tag>
+      </tags>
   </entry>
   <entry>
     <title>jQuery笔记</title>
@@ -639,11 +646,13 @@
 <p>集中式的版本控制系统：版本库是集中存放在中央服务器，必须联网才能工作。  </p>
 <p>如：CVS、SVN  </p>
 <p>历史：linux之父为了更好的管理他自己的开源项目linux系统而自己用C语言开发的分布式版本控制系统Git</p>
+<a id="more"></a>
+
 <h4 id="二-Git安装"><a href="#二-Git安装" class="headerlink" title="二.Git安装"></a>二.Git安装</h4><ul>
 <li>Linux上安装</li>
 </ul>
 <p>1.判断是否已安装Git</p>
-<pre><code>$ git</code></pre><p>2.否则</p>
+<pre><code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ git</span><br></pre></td></tr></table></figure></code></pre><p>2.否则</p>
 <pre><code>Debian或Ubuntu Linux：
 sudo apt-get install git
 或
