@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"nanibok.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="HTTP状态码（HTTP Status Code）当浏览者访问一个网页时，浏览者的浏览器会向网页所在服务器发出请求。当浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求。 HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。 常见的HTTP状态码： 200 - 请求成功 30">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTP状态码">
+<meta property="og:url" content="https://nanibok.github.io/%E7%AC%94%E8%AE%B0/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88HTTP%20Status%20Code%EF%BC%89/index.html">
+<meta property="og:site_name" content="彼端之云">
+<meta property="og:description" content="HTTP状态码（HTTP Status Code）当浏览者访问一个网页时，浏览者的浏览器会向网页所在服务器发出请求。当浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求。 HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。 常见的HTTP状态码： 200 - 请求成功 30">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-09-12T14:09:16.000Z">
+<meta property="article:modified_time" content="2020-06-22T07:53:17.280Z">
+<meta property="article:author" content="Nanibok">
+<meta property="article:tag" content="HTTP">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://nanibok.github.io/%E7%AC%94%E8%AE%B0/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88HTTP%20Status%20Code%EF%BC%89/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>HTTP状态码 | 彼端之云</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">彼端之云</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">约定的地方</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">3</span></a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">15</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">15</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://nanibok.github.io/%E7%AC%94%E8%AE%B0/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88HTTP%20Status%20Code%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Nanibok">
+      <meta itemprop="description" content="曾为少年，如今为谁">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="彼端之云">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          HTTP状态码
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-09-12 22:09:16" itemprop="dateCreated datePublished" datetime="2019-09-12T22:09:16+08:00">2019-09-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/%E7%AC%94%E8%AE%B0/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88HTTP%20Status%20Code%EF%BC%89/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/%E7%AC%94%E8%AE%B0/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88HTTP%20Status%20Code%EF%BC%89/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              <span>2.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="HTTP状态码（HTTP-Status-Code）"><a href="#HTTP状态码（HTTP-Status-Code）" class="headerlink" title="HTTP状态码（HTTP Status Code）"></a>HTTP状态码（HTTP Status Code）</h2><p>当浏览者访问一个网页时，浏览者的浏览器会向网页所在服务器发出请求。当浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求。</p>
+<p>HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。</p>
+<h4 id="常见的HTTP状态码："><a href="#常见的HTTP状态码：" class="headerlink" title="常见的HTTP状态码："></a>常见的HTTP状态码：</h4><ul>
+<li>200 - 请求成功</li>
+<li>301 - 资源（网页等）被永久转移到其它URL</li>
+<li>404 - 资源（网页等）不存在</li>
+<li>500 - 内部服务器错误</li>
+</ul>
+<h4 id="HTTP状态码分类（5种）"><a href="#HTTP状态码分类（5种）" class="headerlink" title="HTTP状态码分类（5种）"></a>HTTP状态码分类（5种）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1**	信息，服务器收到请求，需要请求者继续执行操作</span><br><span class="line">2**	成功，操作被成功接收并处理</span><br><span class="line">3**	重定向，需要进一步的操作以完成请求</span><br><span class="line">4**	客户端错误，请求包含语法错误或无法完成请求</span><br><span class="line">5**	服务器错误，服务器在处理请求的过程中发生了错误</span><br></pre></td></tr></table></figure>
+
+<h4 id="1xx-消息"><a href="#1xx-消息" class="headerlink" title="1xx  消息"></a>1xx  消息</h4><p>临时响应，代表请求已被接受，需要继续处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">100——继续，客户端应当继续发送请求</span><br><span class="line"></span><br><span class="line">101——切换协议，服务器根据请求转换HTTP协议版本</span><br><span class="line"></span><br><span class="line">102——由WebDAV（RFC 2518）扩展的状态码，代表处理将被继续执行</span><br></pre></td></tr></table></figure>
+
+<h4 id="2xx-成功"><a href="#2xx-成功" class="headerlink" title="2xx  成功"></a>2xx  成功</h4><p>代表请求已成功被服务器接收并处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">200——请求成功，请求所希望的响应头或数据体将随此响应返回，一般用于GET与POST请求</span><br><span class="line"></span><br><span class="line">201——已创建，请求成功并创建了新的资源，新文件的URI 随Location 头信息返回</span><br><span class="line"></span><br><span class="line">202——已接受，已经接受请求，但未处理完成</span><br><span class="line"></span><br><span class="line">203——非授权信息。请求成功，但返回的meta信息不在原始的服务器，而是一个副本</span><br><span class="line"></span><br><span class="line">204——无内容。服务器成功处理请求，但未返回内容。在未更新网页的情况下，可确保浏览器继续显示当前文档。</span><br><span class="line"></span><br><span class="line">205——重置内容。服务器成功处理请求，未返回内容，但客户端应重置文档视图。可通过此返回码清除浏览器的表单域</span><br><span class="line"></span><br><span class="line">206——部分内容。服务器已经完成了部分GET请求</span><br><span class="line">207——由WebDAV(RFC 2518)扩展的状态码，代表之后的消息体将是一个XML消息</span><br></pre></td></tr></table></figure>
+
+<h4 id="3xx-重定向"><a href="#3xx-重定向" class="headerlink" title="3xx 重定向"></a>3xx 重定向</h4><p>代表客户端需要采取进一步的操作才能完成请求，后续的请求地址（重定向目标<br>）在本次响应的 Location 域中指明</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">300——多种选择。请求的资源可在多处得到，相应可返回一个资源特征与地址的列表供客户端选择</span><br><span class="line"></span><br><span class="line">301——永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI</span><br><span class="line"></span><br><span class="line">302——临时移动。与301类似，但资源只是临时被移动，客户端应继续使用原有URI</span><br><span class="line"></span><br><span class="line">303——查看其它地址。与301类似，建议客户访问其他URL，使用GET和POST请求查看</span><br><span class="line"></span><br><span class="line">304——未修改。GET 请求已执行，但所请求的资源未修改</span><br><span class="line"></span><br><span class="line">305——使用代理。所请求的资源必须通过代理访问</span><br><span class="line"></span><br><span class="line">306——前一版本HTTP中使用的代码，现行版本中不再使用</span><br><span class="line"></span><br><span class="line">307——临时重定向。与302类似，使用GET请求重定向</span><br></pre></td></tr></table></figure>
+
+<h4 id="4xx-客户端错误"><a href="#4xx-客户端错误" class="headerlink" title="4xx  客户端错误"></a>4xx  客户端错误</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">400——错误请求，如语法错误</span><br><span class="line"></span><br><span class="line">401——请求授权失败，要求用户进行身份认证</span><br><span class="line"></span><br><span class="line">402——保留，将来使用</span><br><span class="line"></span><br><span class="line">403——请求不允许，服务器理解请求客户端的请求，但是拒绝执行此请求</span><br><span class="line"></span><br><span class="line">404——服务器无法根据客户端的请求找到资源（网页），广泛应用于当服务器不想揭示到底为何请求被拒绝或者没有其他适合的响应可用的情</span><br><span class="line">况下。</span><br><span class="line"></span><br><span class="line">405——客户端请求中的方法被禁止</span><br><span class="line"></span><br><span class="line">406——服务器无法根据客户端请求的内容特性完成请求</span><br><span class="line"></span><br><span class="line">407——请求要求代理的身份认证，与401类似，但请求者应当使用代理进行授权</span><br><span class="line"></span><br><span class="line">408——超时，服务器等待客户端发送的请求时间过长</span><br><span class="line"></span><br><span class="line">409——服务器完成客户端的 PUT 请求时可能返回此代码，服务器处理请求时发生了冲突</span><br><span class="line"></span><br><span class="line">410——客户端请求的资源已经不存在，包含旧资源失效原因</span><br><span class="line"></span><br><span class="line">411——服务器无法处理客户端发送的不带Content-Length的请求信息</span><br><span class="line"></span><br><span class="line">412——客户端请求信息的先决条件错误</span><br><span class="line"></span><br><span class="line">413——请求的资源大于服务器允许的大小，因此拒绝请求</span><br><span class="line"></span><br><span class="line">414——请求的资源URL长于服务器允许的长度，服务器无法处理</span><br><span class="line"></span><br><span class="line">415——服务器无法处理请求附带的媒体格式</span><br><span class="line"></span><br><span class="line">416——客户端请求的范围无效</span><br><span class="line"></span><br><span class="line">417——服务器不满足请求Expect头字段指定的期望值，如果是代理服务器，可能是下一级服务器不能满足请求</span><br></pre></td></tr></table></figure>
+
+<h4 id="5xx-服务器错误"><a href="#5xx-服务器错误" class="headerlink" title="5xx 服务器错误"></a>5xx 服务器错误</h4><p>代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">500——服务器内部错误，无法完成请求</span><br><span class="line"></span><br><span class="line">501——服务器不支持请求的功能，无法完成请求</span><br><span class="line"></span><br><span class="line">502——服务器暂时不可用，有时是为了防止发生系统过载</span><br><span class="line"></span><br><span class="line">503——服务器过载或系统维护</span><br><span class="line"></span><br><span class="line">504——充当网关或代理的服务器，未及时从远端服务器获取请求</span><br><span class="line"></span><br><span class="line">505——服务器不支持或拒绝支请求头中指定的HTTP版本</span><br></pre></td></tr></table></figure>
+
+<h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><p>500错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">500错误是站长经常遇到的问题，就本人的经验，原因及解决方法归纳如下：</span><br><span class="line"></span><br><span class="line">1、运行的用户数过多，对服务器造成的压力过大，服务器无法响应，则报HTTP500错误。</span><br><span class="line"></span><br><span class="line">这个原因是网站报500错误的最主要原因，很多网站为什么突然会报500错误（service unavailable）呢？90%是由于空间压力过大，超出了空间商设定的上限而造成的。</span><br><span class="line"></span><br><span class="line">遇到这个问题，最好是第一时间找到空间商的售后服务，他们一般会帮你回收一下应用程序池，问题便得到解决。如果没有找到售后服务，可以自己在空间管理后台，找到“回收应用程序池”那个项目，自己手动执行一下即可。不过，一些空间管理后台并没有提供该项服务。</span><br><span class="line"></span><br><span class="line">2、如果排除了第1的可能性，那么很大原因便是程序上出现了问题。</span><br><span class="line"></span><br><span class="line">可以做个简单的测试页面，看是否能运行成功，再检测报错的页面，从而针对性的进行修改。</span><br><span class="line"></span><br><span class="line">该做关联的地方没有去做关联，则报HTTP500错误。进行手工或者自动关联，问题得到解决。</span><br><span class="line"></span><br><span class="line">3、如果测试中所进行的操作需要向数据库中插入数据，若大数据量的情况下导致数据库中表空间已满，或者缓冲池较小无法满足数据的存取等，都有可能导致HTTP500错误。</span><br><span class="line"></span><br><span class="line">解决方法是调整数据库、修改连接池大小等等，根据个人具体情况进行修正即可。</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------　　　　本文结束　<i class="fa fa-flag"></i>　感谢阅读　　　　-------------</div>
+    
+</div>
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Nanibok
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://nanibok.github.io/%E7%AC%94%E8%AE%B0/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88HTTP%20Status%20Code%EF%BC%89/" title="HTTP状态码">https://nanibok.github.io/笔记/HTTP状态码（HTTP Status Code）/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/HTTP/" rel="tag"><i class="fa fa-tag"></i> HTTP</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E7%AC%94%E8%AE%B0/Axios%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="Axios学习笔记">
+      <i class="fa fa-chevron-left"></i> Axios学习笔记
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/%E7%AC%94%E8%AE%B0/Less/" rel="next" title="CSS预处理器Less">
+      CSS预处理器Less <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP状态码（HTTP-Status-Code）"><span class="nav-text">HTTP状态码（HTTP Status Code）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常见的HTTP状态码："><span class="nav-text">常见的HTTP状态码：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTP状态码分类（5种）"><span class="nav-text">HTTP状态码分类（5种）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1xx-消息"><span class="nav-text">1xx  消息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2xx-成功"><span class="nav-text">2xx  成功</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3xx-重定向"><span class="nav-text">3xx 重定向</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4xx-客户端错误"><span class="nav-text">4xx  客户端错误</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5xx-服务器错误"><span class="nav-text">5xx 服务器错误</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案"><span class="nav-text">解决方案</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Nanibok"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">Nanibok</p>
+  <div class="site-description" itemprop="description">曾为少年，如今为谁</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL05hbmlib2s=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Nanibok"><i class="fa fa-fw fa-fab fa-github"></i>GitHub</span>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Nanibok</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">53k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">48 分钟</span>
+</div>
+
+  <script>
+    var OriginTitle = document.title;
+    var titleTime;
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        document.title = '(*^▽^*)' + OriginTitle;
+        clearTimeout(titleTime);
+      } else {
+        document.title = '(≧▽≦)' + OriginTitle;
+        titleTime = setTimeout(function() {
+          document.title = OriginTitle;
+        }, 2000);
+      }
+    });
+  </script>
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'bXdX1aBMLHnLO7KC3YTYQsjp-gzGzoHsz',
+      appKey     : 'LbuSzkhNJl8iShA1cXUd2faD',
+      placeholder: "在这里写下你的评论吧！",
+      avatar     : 'robohash',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
