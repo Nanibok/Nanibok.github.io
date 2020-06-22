@@ -757,7 +757,14 @@ $ git push origin :refs/tags/v0.9    //删除远程标签</code></pre>]]></conte
   <entry>
     <title>李立超JS视频教程学习笔记</title>
     <url>/%E7%AC%94%E8%AE%B0/%E6%9D%8E%E7%AB%8B%E8%B6%85JS%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="李立超JS视频教程学习笔记（持续更新）"><a href="#李立超JS视频教程学习笔记（持续更新）" class="headerlink" title="李立超JS视频教程学习笔记（持续更新）"></a>李立超JS视频教程学习笔记（持续更新）</h2><h3 id="001-简介"><a href="#001-简介" class="headerlink" title="001 简介"></a>001 简介</h3><p>1.95年诞生，Netscape创建，用于网页的前端验证；<br>2.同年，微软创建JScript；<br>3.制定统一标准ECMAScript<br>4.标准的实现称为JS引擎，如Chrome的v8引擎<br>5.JavaScript包括ECMAScript,DOM,BOM<br>6.特点：</p>
+    <content><![CDATA[<h2 id="李立超JS视频教程学习笔记（持续更新）"><a href="#李立超JS视频教程学习笔记（持续更新）" class="headerlink" title="李立超JS视频教程学习笔记（持续更新）"></a>李立超JS视频教程学习笔记（持续更新）</h2><h3 id="001-简介"><a href="#001-简介" class="headerlink" title="001 简介"></a>001 简介</h3><p>1.95年诞生，Netscape创建，用于网页的前端验证；</p>
+<p>2.同年，微软创建JScript；</p>
+<p>3.制定统一标准ECMAScript</p>
+<p>4.标准的实现称为JS引擎，如Chrome的v8引擎</p>
+<p>5.JavaScript包括ECMAScript,DOM,BOM</p>
+<a id="more"></a>
+
+<p>6.特点：</p>
 <ul>
 <li>解释型语言（不用编译，直接运行）</li>
 <li>类似于C和JAVA的语法结构</li>
@@ -847,6 +854,8 @@ null和undefined都为false
     <title>我的时区</title>
     <url>/%E9%9A%8F%E7%AC%94/%E6%88%91%E7%9A%84%E6%97%B6%E5%8C%BA/</url>
     <content><![CDATA[<p>分享一首小诗</p>
+<a id="more"></a>
+
 <blockquote>
 <p>每个人都有自己的时区<br>纽约时间比加州时间早三个小时，<br>但加州时间并没有变慢。<br>有人22岁就毕业了，<br>但等了五年才找到好的工作！<br>有人25岁就当上了CEO，<br>却在50岁去世。<br>也有人迟到50岁才当上CEO，<br>然后活到90岁。<br>有人依然单身，<br>同时也有人已婚。<br>奥巴马55岁就退休，<br>川普70岁才开始当总统。<br>世上每个人本来就有自己的发展时区。<br>身边有些人看似走在你前面，<br>也有人看似走在你后面。<br>但其实每个人在自己的时区都有自己的步伐。<br>不用嫉妒或嘲笑他们。<br>他们都在记得时区里，你也是！<br>生命就是等待正确的是行动时机。<br>所以，放轻松。<br>你没有落后。<br>你没有领先。<br>在命运为你安排的属于自己的时区里，一切都准时。</p>
 </blockquote>
@@ -871,6 +880,8 @@ null和undefined都为false
 <p>|    |    在匿名函数内部return某个对象，里面包含要导出的变量或方法，在其他js文件中可使用该对象（ES5的导入导出）</p>
 <p>出现模块化的规范</p>
 <p>|    |    CommonJS，AMD，CMD，ES6的modules，核心都是导入导出（CommonJS的实现代表node.js）</p>
+<a id="more"></a>
+
 <h3 id="2-常用模块化规范的基本语法"><a href="#2-常用模块化规范的基本语法" class="headerlink" title="2.常用模块化规范的基本语法"></a>2.常用模块化规范的基本语法</h3><h4 id="2-1-CommonJS"><a href="#2-1-CommonJS" class="headerlink" title="2.1    CommonJS"></a>2.1    CommonJS</h4><p>CommonJS的导入导出，需要底层支撑才能解析代码，比如在node环境下</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">导出：</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	flag:flag <span class="comment">//简写flag</span></span><br><span class="line">&#125;</span><br><span class="line">导入：</span><br><span class="line"><span class="keyword">let</span> &#123;flag&#125; = <span class="built_in">require</span>(<span class="string">'./index.js'</span>)</span><br></pre></td></tr></table></figure>
 
@@ -1012,6 +1023,8 @@ null和undefined都为false
 <p>​    基于<code>&lt;script&gt;</code>标签的src属性，可解决跨域访问的问题</p>
 <p><strong>4.Axios</strong></p>
 <p>​    可在node环境使用，支持Promise，可拦截请求和响应并处理其中的数据</p>
+<a id="more"></a>
+
 <h3 id="二、axios框架基本介绍"><a href="#二、axios框架基本介绍" class="headerlink" title="二、axios框架基本介绍"></a>二、axios框架基本介绍</h3><p>axios可理解为：ajax I/O system</p>
 <h4 id="2-1-请求方式"><a href="#2-1-请求方式" class="headerlink" title="2.1 请求方式"></a>2.1 请求方式</h4><ul>
 <li>axios(config)</li>
@@ -1072,6 +1085,8 @@ null和undefined都为false
     <content><![CDATA[<h2 id="CSS预处理器Less"><a href="#CSS预处理器Less" class="headerlink" title="CSS预处理器Less"></a>CSS预处理器Less</h2><p>三种预处理器</p>
 <p>Less、Sass、Stylus</p>
 <p>作用：方便开发者编写代码，结构更清晰，更简洁，提高编码效率</p>
+<a id="more"></a>
+
 <h4 id="一-less简介"><a href="#一-less简介" class="headerlink" title="一.less简介"></a>一.less简介</h4><p>less是一种动态样式语言，增加了变量，函数，mixin等特性，既可以在客户端运行，也可以借助node.js在服务器端运行。</p>
 <p>官网：<span class="exturl" data-url="aHR0cDovL2xlc3Njc3MuY24v" title="http://lesscss.cn/">http://lesscss.cn/<i class="fa fa-external-link"></i></span></p>
 <p>文件后缀为.less，需要编译成css文件方可使用</p>
@@ -1146,6 +1161,8 @@ null和undefined都为false
     <url>/%E7%AC%94%E8%AE%B0/JSONP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="JSONP学习笔记"><a href="#JSONP学习笔记" class="headerlink" title="JSONP学习笔记"></a>JSONP学习笔记</h1><h2 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h2><p>同源的定义：如果两个地址的协议，域名和端口都相同，则两者具有相同的源。</p>
 <p>同源策略：不同源的客户端脚本在没有明确授权的情况下，不能读写对方的资源，这是一个用于隔离潜在恶意文件的重要安全机制。</p>
+<a id="more"></a>
+
 <p>限制范围：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">（1） Cookie、LocalStorage 和 IndexDB 无法读取。</span><br><span class="line">（2） DOM 无法获得。</span><br><span class="line">（3） AJAX 请求不能发送。</span><br></pre></td></tr></table></figure>
 
@@ -1181,6 +1198,8 @@ null和undefined都为false
     <url>/%E7%AC%94%E8%AE%B0/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88HTTP%20Status%20Code%EF%BC%89/</url>
     <content><![CDATA[<h2 id="HTTP状态码（HTTP-Status-Code）"><a href="#HTTP状态码（HTTP-Status-Code）" class="headerlink" title="HTTP状态码（HTTP Status Code）"></a>HTTP状态码（HTTP Status Code）</h2><p>当浏览者访问一个网页时，浏览者的浏览器会向网页所在服务器发出请求。当浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求。</p>
 <p>HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。</p>
+<a id="more"></a>
+
 <h4 id="常见的HTTP状态码："><a href="#常见的HTTP状态码：" class="headerlink" title="常见的HTTP状态码："></a>常见的HTTP状态码：</h4><ul>
 <li>200 - 请求成功</li>
 <li>301 - 资源（网页等）被永久转移到其它URL</li>
@@ -1222,6 +1241,8 @@ null和undefined都为false
 <li>学习Stylus的基础语法</li>
 <li>在开发中使用Stylus的便捷特性</li>
 </ul>
+<a id="more"></a>
+
 <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>这个哥们儿学名叫 stylus，是 CSS 的预处理框架。</p>
 <p>CSS 预处理，顾名思义，预先处理 CSS。那 stylus 咋预先处理呢？stylus 给 CSS 添加了可编程的特性，也就是说，在 stylus 中可以使用变量、函数、判断、循环一系列 CSS 没有的东西来编写样式文件，执行这一套骚操作之后，这个文件可编译成 CSS 文件。</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>首先，安装 stylus（确保之前已经安装 nodejs ）。</p>
@@ -1281,6 +1302,8 @@ null和undefined都为false
     <title>vim编辑器</title>
     <url>/%E7%AC%94%E8%AE%B0/vim%E7%BC%96%E8%BE%91%E5%99%A8/</url>
     <content><![CDATA[<h1 id="vim编辑器"><a href="#vim编辑器" class="headerlink" title="vim编辑器"></a>vim编辑器</h1><p>vi 是老式的字处理器，而 vim 是在 vi 的基础上开发而来的，增加了代码补完、编译及错误跳转等方便编程的功能，可以说 vim 是一个程序开发工具。</p>
+<a id="more"></a>
+
 <h2 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h2><p>vi/vim 分为三种模式，分别是<strong>命令模式（Command mode）</strong>，<strong>输入模式（Insert mode）</strong>和<strong>底线命令模式（Last line mode）</strong></p>
 <p>通过·<code>vi/vim 文件名</code>，启动编辑器并打开文本(若文件不存在则创建)</p>
 <h3 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h3><p>首先进入命令模式，此状态下敲击键盘的动作会被 Vim 识别为命令，而非输入字符。</p>
@@ -1634,6 +1657,8 @@ null和undefined都为false
 <blockquote>
 <p>每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜索和复制所保存的数据</p>
 </blockquote>
+<a id="more"></a>
+
 <p><strong>关系型数据库</strong>：建立在关系模型基础上的数据库，借助于集合代数等数学概念和方法来处理数据库中的数据。</p>
 <p><strong>关系型数据库特点：</strong></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.数据以表格的形式出现</span><br><span class="line">2.每行为各种记录名称</span><br><span class="line">3.每列为记录名称所对应的数据域</span><br><span class="line">4.许多的行和列组成一张表单</span><br><span class="line">5.若干的表单组成database</span><br></pre></td></tr></table></figure>
@@ -2390,7 +2415,10 @@ STATUS;</code></p>
   <entry>
     <title>Gris初体验</title>
     <url>/%E6%B8%B8%E6%88%8F%E6%97%A5%E8%AE%B0/Gris%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
-    <content><![CDATA[<p>不知自己身处何处，不清楚自己的目的是啥，迷失在这唯美的画面和逼真的音效之中，好吧，我迷路了。与女主一样，我感到了深深的孤独，画中世界如此美丽，如此令人陶醉，但环顾四周，只身一人。而这孤独又令人迷恋，遇到一只小小的会动的生物如此让人惊喜。当女主摸着小不点的头时，仿佛之前的迷失感都是为此刻准备的。还有，那该死的鳗鱼吓到我了。</p>
+    <content><![CDATA[<p>不知自己身处何处，不清楚自己的目的是啥，迷失在这唯美的画面和逼真的音效之中，好吧，我迷路了。</p>
+<a id="more"></a>
+
+<p>与女主一样，我感到了深深的孤独，画中世界如此美丽，如此令人陶醉，但环顾四周，只身一人。而这孤独又令人迷恋，遇到一只小小的会动的生物如此让人惊喜。当女主摸着小不点的头时，仿佛之前的迷失感都是为此刻准备的。还有，那该死的鳗鱼吓到我了。</p>
 ]]></content>
       <categories>
         <category>游戏日记</category>
@@ -2404,6 +2432,8 @@ STATUS;</code></p>
     <url>/%E6%B8%B8%E6%88%8F%E6%97%A5%E8%AE%B0/To%20The%20Moon/</url>
     <content><![CDATA[<p>游戏性几乎没有，但剧本和音乐优秀到可以直接忽略这一点。</p>
 <p>鸭嘴兽玩偶，纸兔子，夜空下的约定…都深深触动我的泪点。</p>
+<a id="more"></a>
+
 <p>故事虽以HE结束，两人紧握的双手让这段凄美的爱情不那么伤感，然而这终究是虚构的。现实的river依旧让人心疼。我似乎对river无法释怀，她最终也没告诉Jhon真相。亚斯伯格症患者，坚强的孤独，固执的性格，让她无法向他人述说真相。当她听到Jhon接近她的真相，当她知道只有自己记得那晚的约定时，她是绝望的。随着鸭嘴兽玩偶被扔下山崖，他们曾经拥有的回忆只剩下灯塔。据此似乎也能理解river最终做出的选择了。</p>
 <p>而这一切竟是由于一场意外，命运弄人啊。</p>
 <p>这份心情难以释怀。。</p>
